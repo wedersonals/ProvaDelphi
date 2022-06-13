@@ -1,0 +1,84 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{4FAD9595-4920-4D38-8391-977B2DE7F423}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="aplicativo\ProvaDelphiApp.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="aplicativo\Tests\ProvaDelphiAppTest.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="pacotes\spComponentes.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="pacotes\spComponentesDT.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="pacotes\Tests\spComponentesTest.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="ProvaDelphiApp">
+        <MSBuild Projects="aplicativo\ProvaDelphiApp.dproj"/>
+    </Target>
+    <Target Name="ProvaDelphiApp:Clean">
+        <MSBuild Projects="aplicativo\ProvaDelphiApp.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="ProvaDelphiApp:Make">
+        <MSBuild Projects="aplicativo\ProvaDelphiApp.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="ProvaDelphiAppTest">
+        <MSBuild Projects="aplicativo\Tests\ProvaDelphiAppTest.dproj"/>
+    </Target>
+    <Target Name="ProvaDelphiAppTest:Clean">
+        <MSBuild Projects="aplicativo\Tests\ProvaDelphiAppTest.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="ProvaDelphiAppTest:Make">
+        <MSBuild Projects="aplicativo\Tests\ProvaDelphiAppTest.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="spComponentes">
+        <MSBuild Projects="pacotes\spComponentes.dproj"/>
+    </Target>
+    <Target Name="spComponentes:Clean">
+        <MSBuild Projects="pacotes\spComponentes.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="spComponentes:Make">
+        <MSBuild Projects="pacotes\spComponentes.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="spComponentesDT">
+        <MSBuild Projects="pacotes\spComponentesDT.dproj"/>
+    </Target>
+    <Target Name="spComponentesDT:Clean">
+        <MSBuild Projects="pacotes\spComponentesDT.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="spComponentesDT:Make">
+        <MSBuild Projects="pacotes\spComponentesDT.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="spComponentesTest">
+        <MSBuild Projects="pacotes\Tests\spComponentesTest.dproj"/>
+    </Target>
+    <Target Name="spComponentesTest:Clean">
+        <MSBuild Projects="pacotes\Tests\spComponentesTest.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="spComponentesTest:Make">
+        <MSBuild Projects="pacotes\Tests\spComponentesTest.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="ProvaDelphiApp;ProvaDelphiAppTest;spComponentes;spComponentesDT;spComponentesTest"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="ProvaDelphiApp:Clean;ProvaDelphiAppTest:Clean;spComponentes:Clean;spComponentesDT:Clean;spComponentesTest:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="ProvaDelphiApp:Make;ProvaDelphiAppTest:Make;spComponentes:Make;spComponentesDT:Make;spComponentesTest:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>
