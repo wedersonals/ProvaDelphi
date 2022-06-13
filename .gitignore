@@ -34,7 +34,7 @@ Src/IOSSimulator/
 Src/Osx32/
 Src/Osx64/
 Src/Android/
-*.exe
+# *.exe
 *.dll
 *.bpl
 *.bpi
@@ -42,7 +42,7 @@ Src/Android/
 *.so
 *.apk
 *.drc
-*.map
+# *.map
 *.dres
 *.rsm
 *.tds
@@ -67,3 +67,6 @@ __history/
 # Castalia statistics file
 *.stat
 
+# Outros arquivos
+*.log
+*.xml

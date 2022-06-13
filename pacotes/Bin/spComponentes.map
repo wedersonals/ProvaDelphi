@@ -1,0 +1,1425 @@
+
+ Start         Length     Name                   Class
+ 0001:00401000 000034C0H .text                   CODE
+ 0002:00405000 000001D0H .itext                  ICODE
+ 0003:00406000 00000094H .data                   DATA
+ 0004:00407000 00000034H .bss                    BSS
+ 0005:00000000 00000000H .tls                    TLS
+ 0006:00400000 00000000H .pdata                  PDATA
+
+
+Detailed map of segments
+
+ 0001:00000000 00000138 C=CODE     S=.text    G=(none)   M=System   ACBP=A9
+ 0001:00000138 00000CEC C=CODE     S=.text    G=(none)   M=SysInit  ACBP=A9
+ 0001:00000E24 00000008 C=CODE     S=.text    G=(none)   M=System.UITypes ACBP=A9
+ 0001:00000E2C 0000006C C=CODE     S=.text    G=(none)   M=Winapi.Windows ACBP=A9
+ 0001:00000E98 00000024 C=CODE     S=.text    G=(none)   M=Winapi.PsAPI ACBP=A9
+ 0001:00000EBC 00000008 C=CODE     S=.text    G=(none)   M=System.Character ACBP=A9
+ 0001:00000EC4 00000008 C=CODE     S=.text    G=(none)   M=System.Internal.ExcUtils ACBP=A9
+ 0001:00000ECC 00000068 C=CODE     S=.text    G=(none)   M=System.SysUtils ACBP=A9
+ 0001:00000F34 00000008 C=CODE     S=.text    G=(none)   M=System.VarUtils ACBP=A9
+ 0001:00000F3C 00000008 C=CODE     S=.text    G=(none)   M=System.Variants ACBP=A9
+ 0001:00000F44 00000008 C=CODE     S=.text    G=(none)   M=System.Math ACBP=A9
+ 0001:00000F4C 00000018 C=CODE     S=.text    G=(none)   M=System.Rtti ACBP=A9
+ 0001:00000F64 00000008 C=CODE     S=.text    G=(none)   M=System.TypInfo ACBP=A9
+ 0001:00000F6C 00000010 C=CODE     S=.text    G=(none)   M=System.Generics.Defaults ACBP=A9
+ 0001:00000F7C 00000008 C=CODE     S=.text    G=(none)   M=System.TimeSpan ACBP=A9
+ 0001:00000F84 000000D8 C=CODE     S=.text    G=(none)   M=System.Classes ACBP=A9
+ 0001:0000105C 00000010 C=CODE     S=.text    G=(none)   M=System.DateUtils ACBP=A9
+ 0001:0000106C 00000018 C=CODE     S=.text    G=(none)   M=System.StrUtils ACBP=A9
+ 0001:00001084 00000008 C=CODE     S=.text    G=(none)   M=Data.SqlTimSt ACBP=A9
+ 0001:0000108C 00000008 C=CODE     S=.text    G=(none)   M=Data.FmtBcd ACBP=A9
+ 0001:00001094 000002B8 C=CODE     S=.text    G=(none)   M=Data.DB  ACBP=A9
+ 0001:0000134C 00000008 C=CODE     S=.text    G=(none)   M=System.SyncObjs ACBP=A9
+ 0001:00001354 00000008 C=CODE     S=.text    G=(none)   M=System.IOUtils ACBP=A9
+ 0001:0000135C 00000008 C=CODE     S=.text    G=(none)   M=System.IniFiles ACBP=A9
+ 0001:00001364 00000008 C=CODE     S=.text    G=(none)   M=System.Win.Registry ACBP=A9
+ 0001:0000136C 00000008 C=CODE     S=.text    G=(none)   M=System.AnsiStrings ACBP=A9
+ 0001:00001374 00000010 C=CODE     S=.text    G=(none)   M=System.Win.ComObj ACBP=A9
+ 0001:00001384 00000008 C=CODE     S=.text    G=(none)   M=FireDAC.Stan.Error ACBP=A9
+ 0001:0000138C 00000008 C=CODE     S=.text    G=(none)   M=FireDAC.Stan.Util ACBP=A9
+ 0001:00001394 00000008 C=CODE     S=.text    G=(none)   M=FireDAC.Stan.Intf ACBP=A9
+ 0001:0000139C 00000008 C=CODE     S=.text    G=(none)   M=FireDAC.Stan.SQLTimeInt ACBP=A9
+ 0001:000013A4 00000008 C=CODE     S=.text    G=(none)   M=FireDAC.DatS ACBP=A9
+ 0001:000013AC 00000008 C=CODE     S=.text    G=(none)   M=FireDAC.UI.Intf ACBP=A9
+ 0001:000013B4 00000008 C=CODE     S=.text    G=(none)   M=FireDAC.Stan.Factory ACBP=A9
+ 0001:000013BC 00000008 C=CODE     S=.text    G=(none)   M=FireDAC.Stan.Option ACBP=A9
+ 0001:000013C4 00000008 C=CODE     S=.text    G=(none)   M=FireDAC.Stan.Param ACBP=A9
+ 0001:000013CC 00000400 C=CODE     S=.text    G=(none)   M=FireDAC.Comp.DataSet ACBP=A9
+ 0001:000017CC 00000008 C=CODE     S=.text    G=(none)   M=FireDAC.Stan.Expr ACBP=A9
+ 0001:000017D4 00000210 C=CODE     S=.text    G=(none)   M=FireDAC.Comp.Client ACBP=A9
+ 0001:000019E4 0000173C C=CODE     S=.text    G=(none)   M=uspQuery ACBP=A9
+ 0001:00003120 000003A0 C=CODE     S=.text    G=(none)   M=.spComponentes ACBP=A9
+ 0002:00000000 00000008 C=ICODE    S=.itext   G=(none)   M=System   ACBP=A9
+ 0002:00000008 00000008 C=ICODE    S=.itext   G=(none)   M=SysInit  ACBP=A9
+ 0002:00000010 00000008 C=ICODE    S=.itext   G=(none)   M=System.UITypes ACBP=A9
+ 0002:00000018 00000018 C=ICODE    S=.itext   G=(none)   M=Winapi.Windows ACBP=A9
+ 0002:00000030 00000008 C=ICODE    S=.itext   G=(none)   M=Winapi.PsAPI ACBP=A9
+ 0002:00000038 00000008 C=ICODE    S=.itext   G=(none)   M=System.Character ACBP=A9
+ 0002:00000040 00000008 C=ICODE    S=.itext   G=(none)   M=System.Internal.ExcUtils ACBP=A9
+ 0002:00000048 00000028 C=ICODE    S=.itext   G=(none)   M=System.SysUtils ACBP=A9
+ 0002:00000070 00000008 C=ICODE    S=.itext   G=(none)   M=System.VarUtils ACBP=A9
+ 0002:00000078 00000008 C=ICODE    S=.itext   G=(none)   M=System.Variants ACBP=A9
+ 0002:00000080 00000008 C=ICODE    S=.itext   G=(none)   M=System.Math ACBP=A9
+ 0002:00000088 00000018 C=ICODE    S=.itext   G=(none)   M=System.Rtti ACBP=A9
+ 0002:000000A0 00000008 C=ICODE    S=.itext   G=(none)   M=System.TypInfo ACBP=A9
+ 0002:000000A8 00000010 C=ICODE    S=.itext   G=(none)   M=System.Generics.Defaults ACBP=A9
+ 0002:000000B8 00000008 C=ICODE    S=.itext   G=(none)   M=System.TimeSpan ACBP=A9
+ 0002:000000C0 00000040 C=ICODE    S=.itext   G=(none)   M=System.Classes ACBP=A9
+ 0002:00000100 00000010 C=ICODE    S=.itext   G=(none)   M=System.DateUtils ACBP=A9
+ 0002:00000110 00000008 C=ICODE    S=.itext   G=(none)   M=Data.SqlTimSt ACBP=A9
+ 0002:00000118 00000008 C=ICODE    S=.itext   G=(none)   M=Data.FmtBcd ACBP=A9
+ 0002:00000120 00000008 C=ICODE    S=.itext   G=(none)   M=Data.DB  ACBP=A9
+ 0002:00000128 00000008 C=ICODE    S=.itext   G=(none)   M=System.SyncObjs ACBP=A9
+ 0002:00000130 00000008 C=ICODE    S=.itext   G=(none)   M=System.IOUtils ACBP=A9
+ 0002:00000138 00000008 C=ICODE    S=.itext   G=(none)   M=System.IniFiles ACBP=A9
+ 0002:00000140 00000008 C=ICODE    S=.itext   G=(none)   M=System.Win.Registry ACBP=A9
+ 0002:00000148 00000008 C=ICODE    S=.itext   G=(none)   M=System.AnsiStrings ACBP=A9
+ 0002:00000150 00000010 C=ICODE    S=.itext   G=(none)   M=System.Win.ComObj ACBP=A9
+ 0002:00000160 00000008 C=ICODE    S=.itext   G=(none)   M=FireDAC.Stan.Error ACBP=A9
+ 0002:00000168 00000008 C=ICODE    S=.itext   G=(none)   M=FireDAC.Stan.Util ACBP=A9
+ 0002:00000170 00000008 C=ICODE    S=.itext   G=(none)   M=FireDAC.Stan.Intf ACBP=A9
+ 0002:00000178 00000008 C=ICODE    S=.itext   G=(none)   M=FireDAC.Stan.SQLTimeInt ACBP=A9
+ 0002:00000180 00000008 C=ICODE    S=.itext   G=(none)   M=FireDAC.DatS ACBP=A9
+ 0002:00000188 00000008 C=ICODE    S=.itext   G=(none)   M=FireDAC.UI.Intf ACBP=A9
+ 0002:00000190 00000008 C=ICODE    S=.itext   G=(none)   M=FireDAC.Stan.Factory ACBP=A9
+ 0002:00000198 00000008 C=ICODE    S=.itext   G=(none)   M=FireDAC.Stan.Option ACBP=A9
+ 0002:000001A0 00000008 C=ICODE    S=.itext   G=(none)   M=FireDAC.Stan.Param ACBP=A9
+ 0002:000001A8 00000008 C=ICODE    S=.itext   G=(none)   M=FireDAC.Stan.Expr ACBP=A9
+ 0002:000001B0 00000010 C=ICODE    S=.itext   G=(none)   M=FireDAC.Comp.Client ACBP=A9
+ 0002:000001C0 00000008 C=ICODE    S=.itext   G=(none)   M=uspQuery ACBP=A9
+ 0002:000001C8 00000008 C=ICODE    S=.itext   G=(none)   M=.spComponentes ACBP=A9
+ 0003:00000000 00000088 C=DATA     S=.data    G=DGROUP   M=SysInit  ACBP=A9
+ 0003:00000088 0000000C C=DATA     S=.data    G=DGROUP   M=Winapi.Windows ACBP=A9
+ 0004:00000000 00000020 C=BSS      S=.bss     G=DGROUP   M=SysInit  ACBP=A9
+ 0004:00000020 00000008 C=BSS      S=.bss     G=DGROUP   M=Winapi.Windows ACBP=A9
+ 0004:00000028 00000008 C=BSS      S=.bss     G=DGROUP   M=Winapi.PsAPI ACBP=A9
+ 0004:00000030 00000004 C=BSS      S=.bss     G=DGROUP   M=uspQuery ACBP=A9
+
+
+  Address             Publics by Name
+
+ 0002:000001C8       .spComponentes..spComponentes
+ 0001:000034A0       .spComponentes.@GetPackageInfoTable
+ 0001:000034A8       .spComponentes.@PackageLoad
+ 0001:000034B4       .spComponentes.@PackageUnload
+ 0002:00000120       Data.DB.Data.DB
+ 0001:00001344       Data.DB.Finalization
+ 0001:0000120C       Data.DB.TDataSet.ActivateBuffers
+ 0001:0000112C       Data.DB.TDataSet.BindFields
+ 0001:0000125C       Data.DB.TDataSet.BlockReadNext
+ 0001:0000124C       Data.DB.TDataSet.CalculateFields
+ 0001:00001244       Data.DB.TDataSet.CalculateFields
+ 0001:000010B4       Data.DB.TDataSet.CheckActive
+ 0001:00001124       Data.DB.TDataSet.CheckFieldCompatibility
+ 0001:000010AC       Data.DB.TDataSet.CheckInactive
+ 0001:00001204       Data.DB.TDataSet.ClearBuffers
+ 0001:00001114       Data.DB.TDataSet.CreateFields
+ 0001:0000109C       Data.DB.TDataSet.CreateNestedDataSet
+ 0001:00001194       Data.DB.TDataSet.DataConvert
+ 0001:0000118C       Data.DB.TDataSet.DataConvert
+ 0001:000010DC       Data.DB.TDataSet.DefChanged
+ 0001:0000111C       Data.DB.TDataSet.DestroyFields
+ 0001:000012DC       Data.DB.TDataSet.DoAfterCancel
+ 0001:000012E4       Data.DB.TDataSet.DoAfterClose
+ 0001:000012EC       Data.DB.TDataSet.DoAfterDelete
+ 0001:000012F4       Data.DB.TDataSet.DoAfterEdit
+ 0001:000012FC       Data.DB.TDataSet.DoAfterInsert
+ 0001:00001304       Data.DB.TDataSet.DoAfterPost
+ 0001:0000130C       Data.DB.TDataSet.DoAfterScroll
+ 0001:00001314       Data.DB.TDataSet.DoBeforeCancel
+ 0001:0000131C       Data.DB.TDataSet.DoBeforeClose
+ 0001:00001324       Data.DB.TDataSet.DoBeforeOpen
+ 0001:0000132C       Data.DB.TDataSet.DoBeforePost
+ 0001:00001334       Data.DB.TDataSet.DoBeforeRefresh
+ 0001:0000133C       Data.DB.TDataSet.DoOnCalcFields
+ 0001:0000128C       Data.DB.TDataSet.FreeBookmark
+ 0001:00001134       Data.DB.TDataSet.FreeFieldBuffers
+ 0001:000011AC       Data.DB.TDataSet.GetAggFieldsClass
+ 0001:000012D4       Data.DB.TDataSet.GetAggRecordCount
+ 0001:0000113C       Data.DB.TDataSet.GetBlobFieldData
+ 0001:00001284       Data.DB.TDataSet.GetBookmark
+ 0001:000012A4       Data.DB.TDataSet.GetBookmarkData
+ 0001:000012AC       Data.DB.TDataSet.GetBookmarkData
+ 0001:000012C4       Data.DB.TDataSet.GetBookmarkFlag
+ 0001:00001294       Data.DB.TDataSet.GetBookmarkStr
+ 0001:00001234       Data.DB.TDataSet.GetCalcFields
+ 0001:0000123C       Data.DB.TDataSet.GetCalcFields
+ 0001:00001104       Data.DB.TDataSet.GetCalcFieldTypes
+ 0001:000011D4       Data.DB.TDataSet.GetCheckConstraintsClass
+ 0001:00001214       Data.DB.TDataSet.GetCurrentRecord
+ 0001:000010BC       Data.DB.TDataSet.GetDetailDataSets
+ 0001:000010C4       Data.DB.TDataSet.GetDetailDataSets
+ 0001:000010CC       Data.DB.TDataSet.GetDetailLinkFields
+ 0001:000010FC       Data.DB.TDataSet.GetFieldClass
+ 0001:00001154       Data.DB.TDataSet.GetFieldData
+ 0001:0000115C       Data.DB.TDataSet.GetFieldData
+ 0001:0000114C       Data.DB.TDataSet.GetFieldData
+ 0001:00001144       Data.DB.TDataSet.GetFieldData
+ 0001:000011CC       Data.DB.TDataSet.GetFieldDefListClass
+ 0001:000011BC       Data.DB.TDataSet.GetFieldDefsClass
+ 0001:0000110C       Data.DB.TDataSet.GetFieldFullName
+ 0001:000011B4       Data.DB.TDataSet.GetFieldListClass
+ 0001:0000117C       Data.DB.TDataSet.GetFieldNames
+ 0001:000011A4       Data.DB.TDataSet.GetFieldsClass
+ 0001:000011C4       Data.DB.TDataSet.GetIndexDefsClass
+ 0001:000010D4       Data.DB.TDataSet.GetLookupListClass
+ 0001:000011EC       Data.DB.TDataSet.GetNextRecord
+ 0001:0000121C       Data.DB.TDataSet.GetNextRecords
+ 0001:0000119C       Data.DB.TDataSet.GetParamsClass
+ 0001:000011F4       Data.DB.TDataSet.GetPriorRecord
+ 0001:00001224       Data.DB.TDataSet.GetPriorRecords
+ 0001:000010E4       Data.DB.TDataSet.InitFieldDefs
+ 0001:0000122C       Data.DB.TDataSet.InitRecord
+ 0001:0000127C       Data.DB.TDataSet.InternalAddRecord
+ 0001:00001274       Data.DB.TDataSet.InternalAddRecord
+ 0001:000012CC       Data.DB.TDataSet.InternalSetToRecord
+ 0001:00001254       Data.DB.TDataSet.MoveBy
+ 0001:000011FC       Data.DB.TDataSet.Resync
+ 0001:00001264       Data.DB.TDataSet.SetBlockReadSize
+ 0001:000012B4       Data.DB.TDataSet.SetBookmarkData
+ 0001:000012BC       Data.DB.TDataSet.SetBookmarkData
+ 0001:0000129C       Data.DB.TDataSet.SetBookmarkStr
+ 0001:000011DC       Data.DB.TDataSet.SetBufListSize
+ 0001:000011E4       Data.DB.TDataSet.SetCurrentRecord
+ 0001:000010A4       Data.DB.TDataSet.SetDataSetField
+ 0001:0000116C       Data.DB.TDataSet.SetFieldData
+ 0001:00001174       Data.DB.TDataSet.SetFieldData
+ 0001:00001164       Data.DB.TDataSet.SetFieldData
+ 0001:000010F4       Data.DB.TDataSet.SetFieldDefProps
+ 0001:000010EC       Data.DB.TDataSet.SetFieldProps
+ 0001:00001094       Data.DB.TDataSet.SetName
+ 0001:00001184       Data.DB.TDataSet.SetStateFieldValue
+ 0001:0000126C       Data.DB.TDataSet.Translate
+ 0002:00000118       Data.FmtBcd.Data.FmtBcd
+ 0001:0000108C       Data.FmtBcd.Finalization
+ 0002:00000110       Data.SqlTimSt.Data.SqlTimSt
+ 0001:00001084       Data.SqlTimSt.Finalization
+ 0001:000019DC       FireDAC.Comp.Client.Finalization
+ 0002:000001B8       FireDAC.Comp.Client.FireDAC.Comp.Client
+ 0001:000017F4       FireDAC.Comp.Client.TFDAdaptedDataSet.AttachTable
+ 0001:000017EC       FireDAC.Comp.Client.TFDAdaptedDataSet.CheckOnline
+ 0001:000018A4       FireDAC.Comp.Client.TFDAdaptedDataSet.DoApplyUpdates
+ 0001:000017FC       FireDAC.Comp.Client.TFDAdaptedDataSet.DoCloneCursor
+ 0001:0000185C       FireDAC.Comp.Client.TFDAdaptedDataSet.DoCloseSource
+ 0001:00001834       FireDAC.Comp.Client.TFDAdaptedDataSet.DoDefineDatSManager
+ 0001:0000189C       FireDAC.Comp.Client.TFDAdaptedDataSet.DoExecuteSource
+ 0001:00001884       FireDAC.Comp.Client.TFDAdaptedDataSet.DoFetch
+ 0001:0000188C       FireDAC.Comp.Client.TFDAdaptedDataSet.DoFetch
+ 0001:00001874       FireDAC.Comp.Client.TFDAdaptedDataSet.DoGetDatSManager
+ 0001:0000187C       FireDAC.Comp.Client.TFDAdaptedDataSet.DoGetTableName
+ 0001:0000184C       FireDAC.Comp.Client.TFDAdaptedDataSet.DoIsSourceAsync
+ 0001:00001854       FireDAC.Comp.Client.TFDAdaptedDataSet.DoIsSourceOnline
+ 0001:00001844       FireDAC.Comp.Client.TFDAdaptedDataSet.DoIsSourceOpen
+ 0001:00001894       FireDAC.Comp.Client.TFDAdaptedDataSet.DoMasterClearDetails
+ 0001:0000180C       FireDAC.Comp.Client.TFDAdaptedDataSet.DoMasterDefined
+ 0001:0000181C       FireDAC.Comp.Client.TFDAdaptedDataSet.DoMasterParamDependent
+ 0001:00001814       FireDAC.Comp.Client.TFDAdaptedDataSet.DoMasterParamSetValues
+ 0001:0000183C       FireDAC.Comp.Client.TFDAdaptedDataSet.DoOpenSource
+ 0001:00001824       FireDAC.Comp.Client.TFDAdaptedDataSet.DoPrepareSource
+ 0001:000018AC       FireDAC.Comp.Client.TFDAdaptedDataSet.DoProcessUpdateRequest
+ 0001:0000186C       FireDAC.Comp.Client.TFDAdaptedDataSet.DoResetAtLoading
+ 0001:00001864       FireDAC.Comp.Client.TFDAdaptedDataSet.DoResetDatSManager
+ 0001:000018C4       FireDAC.Comp.Client.TFDAdaptedDataSet.DoStoredActivation
+ 0001:0000182C       FireDAC.Comp.Client.TFDAdaptedDataSet.DoUnprepareSource
+ 0001:00001954       FireDAC.Comp.Client.TFDAdaptedDataSet.ExecuteCommand
+ 0001:0000194C       FireDAC.Comp.Client.TFDAdaptedDataSet.GetCommandStates
+ 0001:000018CC       FireDAC.Comp.Client.TFDAdaptedDataSet.GetConn
+ 0001:000018D4       FireDAC.Comp.Client.TFDAdaptedDataSet.GetFeatures
+ 0001:000018B4       FireDAC.Comp.Client.TFDAdaptedDataSet.GetOptionsIntf
+ 0001:000017E4       FireDAC.Comp.Client.TFDAdaptedDataSet.GetParams
+ 0001:000017DC       FireDAC.Comp.Client.TFDAdaptedDataSet.Notification
+ 0001:000018EC       FireDAC.Comp.Client.TFDAdaptedDataSet.PSEndTransaction
+ 0001:0000193C       FireDAC.Comp.Client.TFDAdaptedDataSet.PSExecuteStatement
+ 0001:00001934       FireDAC.Comp.Client.TFDAdaptedDataSet.PSExecuteStatement
+ 0001:0000192C       FireDAC.Comp.Client.TFDAdaptedDataSet.PSExecuteStatement
+ 0001:00001944       FireDAC.Comp.Client.TFDAdaptedDataSet.PSGetAttributes
+ 0001:0000191C       FireDAC.Comp.Client.TFDAdaptedDataSet.PSGetCommandText
+ 0001:0000190C       FireDAC.Comp.Client.TFDAdaptedDataSet.PSGetParams
+ 0001:00001904       FireDAC.Comp.Client.TFDAdaptedDataSet.PSGetQuoteChar
+ 0001:000018DC       FireDAC.Comp.Client.TFDAdaptedDataSet.PSInTransaction
+ 0001:000018F4       FireDAC.Comp.Client.TFDAdaptedDataSet.PSIsSQLBased
+ 0001:000018FC       FireDAC.Comp.Client.TFDAdaptedDataSet.PSIsSQLSupported
+ 0001:00001924       FireDAC.Comp.Client.TFDAdaptedDataSet.PSSetCommandText
+ 0001:00001914       FireDAC.Comp.Client.TFDAdaptedDataSet.PSSetParams
+ 0001:000018E4       FireDAC.Comp.Client.TFDAdaptedDataSet.PSStartTransaction
+ 0001:00001804       FireDAC.Comp.Client.TFDAdaptedDataSet.ServerDeleteAll
+ 0001:000018BC       FireDAC.Comp.Client.TFDAdaptedDataSet.SetOptionsIntf
+ 0002:000001B0       FireDAC.Comp.Client.TFDCustomManager.Create@
+ 0001:000017D4       FireDAC.Comp.Client.TFDCustomManager.Destroy@
+ 0001:000019BC       FireDAC.Comp.Client.TFDCustomQuery.Create
+ 0001:000019C4       FireDAC.Comp.Client.TFDCustomQuery.DefineProperties
+ 0001:000019CC       FireDAC.Comp.Client.TFDCustomQuery.GetSQL
+ 0001:000019D4       FireDAC.Comp.Client.TFDCustomQuery.UpdateRecordCount
+ 0001:0000198C       FireDAC.Comp.Client.TFDRdbmsDataSet.CheckCachedUpdatesMode
+ 0001:0000195C       FireDAC.Comp.Client.TFDRdbmsDataSet.Destroy
+ 0001:000019AC       FireDAC.Comp.Client.TFDRdbmsDataSet.Disconnect
+ 0001:0000199C       FireDAC.Comp.Client.TFDRdbmsDataSet.DoAfterOpenOrExecute
+ 0001:000019A4       FireDAC.Comp.Client.TFDRdbmsDataSet.InternalClose
+ 0001:0000196C       FireDAC.Comp.Client.TFDRdbmsDataSet.InternalCreateAdapter
+ 0001:00001964       FireDAC.Comp.Client.TFDRdbmsDataSet.Loaded
+ 0001:00001994       FireDAC.Comp.Client.TFDRdbmsDataSet.OpenCursor
+ 0001:000019B4       FireDAC.Comp.Client.TFDRdbmsDataSet.PSGetCommandType
+ 0001:00001984       FireDAC.Comp.Client.TFDRdbmsDataSet.ReleaseBase
+ 0001:00001974       FireDAC.Comp.Client.TFDRdbmsDataSet.SetTransaction
+ 0001:0000197C       FireDAC.Comp.Client.TFDRdbmsDataSet.SetUpdateTransaction
+ 0001:000014B4       FireDAC.Comp.DataSet.TFDDataSet.AllocRecordBuffer
+ 0001:00001694       FireDAC.Comp.DataSet.TFDDataSet.BookmarkValid
+ 0001:0000149C       FireDAC.Comp.DataSet.TFDDataSet.CalcBookmarkSize
+ 0001:0000160C       FireDAC.Comp.DataSet.TFDDataSet.Cancel
+ 0001:0000141C       FireDAC.Comp.DataSet.TFDDataSet.CheckMasterRange
+ 0001:0000147C       FireDAC.Comp.DataSet.TFDDataSet.ClearCalcFields
+ 0001:000014C4       FireDAC.Comp.DataSet.TFDDataSet.ClearCalcFields
+ 0001:00001734       FireDAC.Comp.DataSet.TFDDataSet.CloneCursor
+ 0001:0000153C       FireDAC.Comp.DataSet.TFDDataSet.CloseBlob
+ 0001:00001454       FireDAC.Comp.DataSet.TFDDataSet.CloseCursor
+ 0001:0000168C       FireDAC.Comp.DataSet.TFDDataSet.CompareBookmarks
+ 0001:00001534       FireDAC.Comp.DataSet.TFDDataSet.CreateBlobStream
+ 0001:00001744       FireDAC.Comp.DataSet.TFDDataSet.CreateDataSet
+ 0001:0000142C       FireDAC.Comp.DataSet.TFDDataSet.CreateFilterView
+ 0001:000013D4       FireDAC.Comp.DataSet.TFDDataSet.DataEvent
+ 0001:00001554       FireDAC.Comp.DataSet.TFDDataSet.DoAdjustSortFields
+ 0001:0000177C       FireDAC.Comp.DataSet.TFDDataSet.DoAfterApplyUpdate
+ 0001:0000144C       FireDAC.Comp.DataSet.TFDDataSet.DoAfterExecute
+ 0001:00001574       FireDAC.Comp.DataSet.TFDDataSet.DoAfterGetRecords
+ 0001:00001464       FireDAC.Comp.DataSet.TFDDataSet.DoAfterOpen
+ 0001:00001594       FireDAC.Comp.DataSet.TFDDataSet.DoAfterRefresh
+ 0001:00001584       FireDAC.Comp.DataSet.TFDDataSet.DoAfterRowRequest
+ 0001:00001774       FireDAC.Comp.DataSet.TFDDataSet.DoBeforeApplyUpdate
+ 0001:000015DC       FireDAC.Comp.DataSet.TFDDataSet.DoBeforeDelete
+ 0001:000015D4       FireDAC.Comp.DataSet.TFDDataSet.DoBeforeEdit
+ 0001:00001444       FireDAC.Comp.DataSet.TFDDataSet.DoBeforeExecute
+ 0001:0000156C       FireDAC.Comp.DataSet.TFDDataSet.DoBeforeGetRecords
+ 0001:000015CC       FireDAC.Comp.DataSet.TFDDataSet.DoBeforeInsert
+ 0001:0000157C       FireDAC.Comp.DataSet.TFDDataSet.DoBeforeRowRequest
+ 0001:0000158C       FireDAC.Comp.DataSet.TFDDataSet.DoBeforeScroll
+ 0001:0000176C       FireDAC.Comp.DataSet.TFDDataSet.DoCachedUpdatesChanged
+ 0001:0000143C       FireDAC.Comp.DataSet.TFDDataSet.DoCreateFields
+ 0001:000016FC       FireDAC.Comp.DataSet.TFDDataSet.DoFilteringUpdated
+ 0001:00001724       FireDAC.Comp.DataSet.TFDDataSet.DoFilterRow
+ 0001:00001404       FireDAC.Comp.DataSet.TFDDataSet.DoMasterParamChanged
+ 0001:0000140C       FireDAC.Comp.DataSet.TFDDataSet.DoMasterReset
+ 0001:0000162C       FireDAC.Comp.DataSet.TFDDataSet.DoOnNewRecord
+ 0001:0000154C       FireDAC.Comp.DataSet.TFDDataSet.DoPurge
+ 0001:00001644       FireDAC.Comp.DataSet.TFDDataSet.DoReconcileErrorHandler
+ 0001:00001564       FireDAC.Comp.DataSet.TFDDataSet.DoSortOrderChanged
+ 0001:0000155C       FireDAC.Comp.DataSet.TFDDataSet.DoSortOrderChanging
+ 0001:00001634       FireDAC.Comp.DataSet.TFDDataSet.DoUpdateErrorHandler
+ 0001:0000163C       FireDAC.Comp.DataSet.TFDDataSet.DoUpdateRecordHandler
+ 0001:00001474       FireDAC.Comp.DataSet.TFDDataSet.Execute
+ 0001:0000172C       FireDAC.Comp.DataSet.TFDDataSet.FindRecord
+ 0001:000014BC       FireDAC.Comp.DataSet.TFDDataSet.FreeRecordBuffer
+ 0001:0000169C       FireDAC.Comp.DataSet.TFDDataSet.GetAggregateValue
+ 0001:00001674       FireDAC.Comp.DataSet.TFDDataSet.GetBookmarkData
+ 0001:00001664       FireDAC.Comp.DataSet.TFDDataSet.GetBookmarkFlag
+ 0001:0000159C       FireDAC.Comp.DataSet.TFDDataSet.GetCanModify
+ 0001:000015A4       FireDAC.Comp.DataSet.TFDDataSet.GetCanRefresh
+ 0001:0000173C       FireDAC.Comp.DataSet.TFDDataSet.GetClonedDataSet
+ 0001:000014EC       FireDAC.Comp.DataSet.TFDDataSet.GetCurrentRecord
+ 0001:000013EC       FireDAC.Comp.DataSet.TFDDataSet.GetDataSource
+ 0001:000013F4       FireDAC.Comp.DataSet.TFDDataSet.GetDetailLinkFields
+ 0001:0000174C       FireDAC.Comp.DataSet.TFDDataSet.GetExists
+ 0001:00001494       FireDAC.Comp.DataSet.TFDDataSet.GetFieldClass
+ 0001:0000151C       FireDAC.Comp.DataSet.TFDDataSet.GetFieldData
+ 0001:00001514       FireDAC.Comp.DataSet.TFDDataSet.GetFieldData
+ 0001:000016AC       FireDAC.Comp.DataSet.TFDDataSet.GetIsIndexField
+ 0001:00001544       FireDAC.Comp.DataSet.TFDDataSet.GetModifiedBlobCached
+ 0001:000014FC       FireDAC.Comp.DataSet.TFDDataSet.GetRecNo
+ 0001:000014DC       FireDAC.Comp.DataSet.TFDDataSet.GetRecord
+ 0001:000014E4       FireDAC.Comp.DataSet.TFDDataSet.GetRecord
+ 0001:000014F4       FireDAC.Comp.DataSet.TFDDataSet.GetRecordCount
+ 0001:000014AC       FireDAC.Comp.DataSet.TFDDataSet.GetRecordSize
+ 0001:00001524       FireDAC.Comp.DataSet.TFDDataSet.GetStateFieldValue
+ 0001:000014A4       FireDAC.Comp.DataSet.TFDDataSet.InitBufferPointers
+ 0001:00001624       FireDAC.Comp.DataSet.TFDDataSet.InitRecord
+ 0001:00001614       FireDAC.Comp.DataSet.TFDDataSet.InternalAddRecord
+ 0001:00001604       FireDAC.Comp.DataSet.TFDDataSet.InternalCancel
+ 0001:000016B4       FireDAC.Comp.DataSet.TFDDataSet.InternalDefaultKeyFieldCount
+ 0001:000015F4       FireDAC.Comp.DataSet.TFDDataSet.InternalDelete
+ 0001:000015BC       FireDAC.Comp.DataSet.TFDDataSet.InternalEdit
+ 0001:000015AC       FireDAC.Comp.DataSet.TFDDataSet.InternalFirst
+ 0001:0000164C       FireDAC.Comp.DataSet.TFDDataSet.InternalGotoBookmark
+ 0001:00001654       FireDAC.Comp.DataSet.TFDDataSet.InternalGotoBookmark
+ 0001:000016BC       FireDAC.Comp.DataSet.TFDDataSet.InternalGotoKey
+ 0001:000013CC       FireDAC.Comp.DataSet.TFDDataSet.InternalHandleException
+ 0001:00001484       FireDAC.Comp.DataSet.TFDDataSet.InternalInitFieldDefs
+ 0001:0000161C       FireDAC.Comp.DataSet.TFDDataSet.InternalInitRecord
+ 0001:0000148C       FireDAC.Comp.DataSet.TFDDataSet.InternalInitRecord
+ 0001:000015C4       FireDAC.Comp.DataSet.TFDDataSet.InternalInsert
+ 0001:000015B4       FireDAC.Comp.DataSet.TFDDataSet.InternalLast
+ 0001:0000145C       FireDAC.Comp.DataSet.TFDDataSet.InternalOpen
+ 0001:000015E4       FireDAC.Comp.DataSet.TFDDataSet.InternalPost
+ 0001:000015FC       FireDAC.Comp.DataSet.TFDDataSet.InternalRefresh
+ 0001:000016C4       FireDAC.Comp.DataSet.TFDDataSet.InternalResetRange
+ 0001:00001504       FireDAC.Comp.DataSet.TFDDataSet.InternalSetRecNo
+ 0001:0000165C       FireDAC.Comp.DataSet.TFDDataSet.InternalSetToRecord
+ 0001:0000146C       FireDAC.Comp.DataSet.TFDDataSet.IsCursorOpen
+ 0001:000013DC       FireDAC.Comp.DataSet.TFDDataSet.IsSequenced
+ 0001:00001754       FireDAC.Comp.DataSet.TFDDataSet.LoadFromStorage
+ 0001:000016CC       FireDAC.Comp.DataSet.TFDDataSet.Locate
+ 0001:000016DC       FireDAC.Comp.DataSet.TFDDataSet.LocateEx
+ 0001:000016D4       FireDAC.Comp.DataSet.TFDDataSet.LocateEx
+ 0001:000016E4       FireDAC.Comp.DataSet.TFDDataSet.Lookup
+ 0001:000016F4       FireDAC.Comp.DataSet.TFDDataSet.LookupEx
+ 0001:000016EC       FireDAC.Comp.DataSet.TFDDataSet.LookupEx
+ 0001:00001424       FireDAC.Comp.DataSet.TFDDataSet.MasterChanged
+ 0001:000013FC       FireDAC.Comp.DataSet.TFDDataSet.MasterDefined
+ 0001:00001414       FireDAC.Comp.DataSet.TFDDataSet.MasterDisabled
+ 0001:000015EC       FireDAC.Comp.DataSet.TFDDataSet.Post
+ 0001:0000178C       FireDAC.Comp.DataSet.TFDDataSet.PSExecute
+ 0001:0000179C       FireDAC.Comp.DataSet.TFDDataSet.PSGetDefaultOrder
+ 0001:000017A4       FireDAC.Comp.DataSet.TFDDataSet.PSGetIndexDefs
+ 0001:000017AC       FireDAC.Comp.DataSet.TFDDataSet.PSGetKeyFields
+ 0001:000017B4       FireDAC.Comp.DataSet.TFDDataSet.PSGetTableName
+ 0001:000017BC       FireDAC.Comp.DataSet.TFDDataSet.PSGetUpdateException
+ 0001:00001794       FireDAC.Comp.DataSet.TFDDataSet.PSReset
+ 0001:000017C4       FireDAC.Comp.DataSet.TFDDataSet.PSUpdateRecord
+ 0001:000014CC       FireDAC.Comp.DataSet.TFDDataSet.RefreshInternalCalcFields
+ 0001:000014D4       FireDAC.Comp.DataSet.TFDDataSet.RefreshInternalCalcFields
+ 0001:000016A4       FireDAC.Comp.DataSet.TFDDataSet.ResetAggField
+ 0001:00001764       FireDAC.Comp.DataSet.TFDDataSet.SaveToDFM
+ 0001:0000175C       FireDAC.Comp.DataSet.TFDDataSet.SaveToStorage
+ 0001:000013E4       FireDAC.Comp.DataSet.TFDDataSet.SetActive
+ 0001:0000167C       FireDAC.Comp.DataSet.TFDDataSet.SetBookmarkData
+ 0001:0000166C       FireDAC.Comp.DataSet.TFDDataSet.SetBookmarkFlag
+ 0001:00001684       FireDAC.Comp.DataSet.TFDDataSet.SetBookmarkFlag
+ 0001:0000152C       FireDAC.Comp.DataSet.TFDDataSet.SetFieldData
+ 0001:00001714       FireDAC.Comp.DataSet.TFDDataSet.SetFiltered
+ 0001:00001704       FireDAC.Comp.DataSet.TFDDataSet.SetFilterOptions
+ 0001:0000170C       FireDAC.Comp.DataSet.TFDDataSet.SetFilterText
+ 0001:0000171C       FireDAC.Comp.DataSet.TFDDataSet.SetOnFilterRecord
+ 0001:0000150C       FireDAC.Comp.DataSet.TFDDataSet.SetRecNo
+ 0001:00001434       FireDAC.Comp.DataSet.TFDDataSet.UpdateIndexDefs
+ 0001:00001784       FireDAC.Comp.DataSet.TFDDataSet.UpdateStatus
+ 0001:000013A4       FireDAC.DatS.Finalization
+ 0002:00000180       FireDAC.DatS.FireDAC.DatS
+ 0001:00001384       FireDAC.Stan.Error.Finalization
+ 0002:00000160       FireDAC.Stan.Error.FireDAC.Stan.Error
+ 0001:000017CC       FireDAC.Stan.Expr.Finalization
+ 0002:000001A8       FireDAC.Stan.Expr.FireDAC.Stan.Expr
+ 0001:000013B4       FireDAC.Stan.Factory.Finalization
+ 0002:00000190       FireDAC.Stan.Factory.FireDAC.Stan.Factory
+ 0001:00001394       FireDAC.Stan.Intf.Finalization
+ 0002:00000170       FireDAC.Stan.Intf.FireDAC.Stan.Intf
+ 0001:000013BC       FireDAC.Stan.Option.Finalization
+ 0002:00000198       FireDAC.Stan.Option.FireDAC.Stan.Option
+ 0001:000013C4       FireDAC.Stan.Param.Finalization
+ 0002:000001A0       FireDAC.Stan.Param.FireDAC.Stan.Param
+ 0001:0000139C       FireDAC.Stan.SQLTimeInt.Finalization
+ 0002:00000178       FireDAC.Stan.SQLTimeInt.FireDAC.Stan.SQLTimeInt
+ 0001:0000138C       FireDAC.Stan.Util.Finalization
+ 0002:00000168       FireDAC.Stan.Util.FireDAC.Stan.Util
+ 0001:000013AC       FireDAC.UI.Intf.Finalization
+ 0002:00000188       FireDAC.UI.Intf.FireDAC.UI.Intf
+ 0001:00000CFC       SysInit...
+ 0003:00000034       SysInit...
+ 0001:00000E04       SysInit...
+ 0001:00000DF4       SysInit...
+ 0001:00000D0C       SysInit...
+ 0001:00000DD0       SysInit...
+ 0001:00000D1C       SysInit...
+ 0001:00000DA8       SysInit...
+ 0001:00000D2C       SysInit...
+ 0001:00000D3C       SysInit...
+ 0001:00000D4C       SysInit...
+ 0001:00000D60       SysInit...
+ 0001:00000D90       SysInit...
+ 0004:00000018       SysInit..1
+ 0001:000007D0       SysInit.@InitPkg
+ 0001:00000834       SysInit.@PackageLoad
+ 0001:00000840       SysInit.@PackageUnload
+ 0001:000002B0       SysInit.@_dbkDummyProc
+ 0001:000002B4       SysInit.@_dbkFCallArgs
+ 0001:000006A4       SysInit.@_dbk_fcall_wrapper
+ 0001:0000084C       SysInit.@_delayLoadHelper2
+ 0001:00000B2C       SysInit.@_FUnloadDelayLoadedDLL2
+ 0001:00000C3C       SysInit.@_HrLoadAllImportsForDll
+ 0004:00000014       SysInit.@_pfnDliFailureHook2
+ 0004:00000010       SysInit.@_pfnDliNotifyHook2
+ 0001:000001A0       SysInit.AllocTlsBuffer
+ 0004:0000000C       SysInit.dbkFCallWrapperAddr
+ 0001:0000025C       SysInit.ExitProcessTLS
+ 0001:00000224       SysInit.ExitThreadTLS
+ 0001:00000E14       SysInit.Finalization
+ 0001:00000148       SysInit.FreeLibrary
+ 0001:00000180       SysInit.GetLastError
+ 0001:00000198       SysInit.GetProcAddress
+ 0001:000001AC       SysInit.GetTlsSize
+ 0004:00000004       SysInit.HInstance
+ 0001:00000280       SysInit.InitializeModule
+ 0001:000001F8       SysInit.InitProcessTLS
+ 0001:000001B4       SysInit.InitThreadTLS
+ 0001:00000138       SysInit.InterlockedExchange
+ 0001:00000188       SysInit.LoadLibraryA
+ 0001:00000150       SysInit.LocalAlloc
+ 0001:00000158       SysInit.LocalFree
+ 0003:00000008       SysInit.Module
+ 0004:00000000       SysInit.ModuleIsLib
+ 0004:00000001       SysInit.ModuleIsPackage
+ 0003:00000004       SysInit.PtrToNil
+ 0001:00000190       SysInit.RaiseException
+ 0001:00000CF4       SysInit.ShutdownDelayHelp2
+ 0002:00000008       SysInit.SysInit
+ 0001:00000160       SysInit.TlsAlloc
+ 0004:0000001C       SysInit.tlsBuffer
+ 0001:00000168       SysInit.TlsFree
+ 0001:00000170       SysInit.TlsGetValue
+ 0003:00000000       SysInit.TlsIndex
+ 0005:00000000       SysInit.TlsLast
+ 0003:00000024       SysInit.TlsProc
+ 0001:00000178       SysInit.TlsSetValue
+ 0001:0000028C       SysInit.UninitializeModule
+ 0004:FFFF9000       SysInit.__ImageBase
+ 0001:00000070       System.@AfterConstruction
+ 0001:00000078       System.@BeforeDestruction
+ 0001:00000060       System.@ClassCreate
+ 0001:00000068       System.@ClassDestroy
+ 0001:00000098       System.@DoneExcept
+ 0001:00000080       System.@HandleAnyException
+ 0001:00000088       System.@HandleFinally
+ 0001:000000F8       System.@IntfCopy
+ 0001:000000A0       System.@PackageLoad
+ 0001:000000A8       System.@PackageUnload
+ 0001:00000090       System.@RaiseExcept
+ 0001:000000B0       System.@RunError
+ 0001:000000C0       System.@UStrArrayClr
+ 0001:000000C8       System.@UStrCat
+ 0001:000000D0       System.@UStrCat3
+ 0001:000000D8       System.@UStrCatN
+ 0001:000000B8       System.@UStrClr
+ 0001:000000E0       System.@UStrEqual
+ 0001:00000130       System.Finalization
+ 0001:000000E8       System.RegisterModule
+ 0002:00000000       System.System
+ 0001:00000100       System.TInterfacedObject.AfterConstruction
+ 0001:00000108       System.TInterfacedObject.BeforeDestruction
+ 0001:00000110       System.TInterfacedObject.NewInstance
+ 0001:00000118       System.TInterfacedObject.QueryInterface
+ 0001:00000120       System.TInterfacedObject._AddRef
+ 0001:00000128       System.TInterfacedObject._Release
+ 0001:00000048       System.TObject.AfterConstruction
+ 0001:00000050       System.TObject.BeforeDestruction
+ 0001:00000040       System.TObject.DefaultHandler
+ 0001:00000010       System.TObject.Destroy
+ 0001:00000058       System.TObject.Dispatch
+ 0001:00000020       System.TObject.Equals
+ 0001:00000018       System.TObject.Free
+ 0001:00000008       System.TObject.FreeInstance
+ 0001:00000028       System.TObject.GetHashCode
+ 0001:00000000       System.TObject.NewInstance
+ 0001:00000030       System.TObject.SafeCallException
+ 0001:00000038       System.TObject.ToString
+ 0001:000000F0       System.UnregisterModule
+ 0001:0000136C       System.AnsiStrings.Finalization
+ 0002:00000148       System.AnsiStrings.System.AnsiStrings
+ 0001:00000EBC       System.Character.Finalization
+ 0002:00000038       System.Character.System.Character
+ 0001:00001054       System.Classes.Finalization
+ 0002:000000F8       System.Classes.System.Classes
+ 0002:000000F0       System.Classes.TBaseAsyncResult.Create@
+ 0001:0000104C       System.Classes.TBaseAsyncResult.Destroy@
+ 0002:000000C8       System.Classes.TBinaryWriter.Create@
+ 0001:00001034       System.Classes.TBinaryWriter.Destroy@
+ 0001:00000FD4       System.Classes.TComponent.AsyncSchedule
+ 0001:00000FDC       System.Classes.TComponent.BeforeDestruction
+ 0001:0000100C       System.Classes.TComponent.CanObserve
+ 0002:000000E0       System.Classes.TComponent.Create@
+ 0001:00000F84       System.Classes.TComponent.Destroy@
+ 0001:00000FFC       System.Classes.TComponent.GetObservers
+ 0001:00001014       System.Classes.TComponent.ObserverAdded
+ 0001:0000102C       System.Classes.TComponent.QueryInterface
+ 0001:00000FE4       System.Classes.TComponent.ReadState
+ 0001:0000101C       System.Classes.TComponent.SafeCallException
+ 0001:00001004       System.Classes.TComponent.UpdateAction
+ 0001:00001024       System.Classes.TComponent.UpdateRegistry
+ 0001:00000FF4       System.Classes.TComponent.ValidateRename
+ 0001:00000FEC       System.Classes.TComponent.WriteState
+ 0002:000000D0       System.Classes.TFieldsCache.Create@
+ 0001:00000F8C       System.Classes.TFieldsCache.Destroy@
+ 0002:000000E8       System.Classes.TLoginCredentialService.Create@
+ 0001:0000103C       System.Classes.TLoginCredentialService.Destroy@
+ 0002:000000C0       System.Classes.TObserverMapping.Create@
+ 0001:00001044       System.Classes.TObserverMapping.Destroy@
+ 0001:00000F94       System.Classes.TPersistent.Assign
+ 0001:00000F9C       System.Classes.TPersistent.AssignTo
+ 0001:00000FC4       System.Classes.TStringList.Create
+ 0001:00000FAC       System.Classes.TStrings.Append
+ 0001:00000FBC       System.Classes.TStrings.SetDelimitedText
+ 0001:00000FA4       System.Classes.TStrings.SetStrictDelimiter
+ 0001:00000FB4       System.Classes.TStrings.SetStrings
+ 0002:000000D8       System.Classes.TThread.Create@
+ 0001:00000FCC       System.Classes.TThread.Destroy@
+ 0001:00001064       System.DateUtils.Finalization
+ 0002:00000108       System.DateUtils.System.DateUtils
+ 0002:00000100       System.DateUtils.TTimeZone.Create@
+ 0001:0000105C       System.DateUtils.TTimeZone.Destroy@
+ 0002:000000B0       System.Generics.Defaults.TIStringComparer.Create@
+ 0001:00000F74       System.Generics.Defaults.TIStringComparer.Destroy@
+ 0002:000000A8       System.Generics.Defaults.TStringComparer.Create@
+ 0001:00000F6C       System.Generics.Defaults.TStringComparer.Destroy@
+ 0001:0000135C       System.IniFiles.Finalization
+ 0002:00000138       System.IniFiles.System.IniFiles
+ 0001:00000EC4       System.Internal.ExcUtils.Finalization
+ 0002:00000040       System.Internal.ExcUtils.System.Internal.ExcUtils
+ 0002:00000130       System.IOUtils.TPath.Create@
+ 0001:00001354       System.IOUtils.TPath.Destroy@
+ 0001:00000F44       System.Math.Finalization
+ 0002:00000080       System.Math.System.Math
+ 0001:00000F5C       System.Rtti.Finalization
+ 0002:00000098       System.Rtti.System.Rtti
+ 0002:00000088       System.Rtti.TRttiContext.Create@
+ 0001:00000F54       System.Rtti.TRttiContext.Destroy@
+ 0002:00000090       System.Rtti.TValue.Create@
+ 0001:00000F4C       System.Rtti.TValue.Destroy@
+ 0001:0000106C       System.StrUtils.ContainsText
+ 0001:00001074       System.StrUtils.IfThen
+ 0001:0000107C       System.StrUtils.RightStr
+ 0001:0000134C       System.SyncObjs.Finalization
+ 0002:00000128       System.SyncObjs.System.SyncObjs
+ 0001:00000ED4       System.SysUtils.Exception.Create
+ 0002:00000058       System.SysUtils.Exception.Create@
+ 0001:00000EDC       System.SysUtils.Exception.Destroy
+ 0001:00000EFC       System.SysUtils.Exception.Destroy@
+ 0001:00000EE4       System.SysUtils.Exception.GetBaseException
+ 0001:00000EEC       System.SysUtils.Exception.RaisingException
+ 0001:00000EF4       System.SysUtils.Exception.ToString
+ 0001:00000F2C       System.SysUtils.Finalization
+ 0001:00000F0C       System.SysUtils.FreeAndNil
+ 0001:00000F04       System.SysUtils.StringReplace
+ 0002:00000068       System.SysUtils.System.SysUtils
+ 0002:00000050       System.SysUtils.TEncoding.Create@
+ 0001:00000F24       System.SysUtils.TEncoding.Destroy@
+ 0002:00000048       System.SysUtils.TLanguages.Create@
+ 0001:00000F14       System.SysUtils.TLanguages.Destroy@
+ 0002:00000060       System.SysUtils.TOSVersion.Create@
+ 0001:00000ECC       System.SysUtils.TOSVersion.Destroy@
+ 0001:00000F1C       System.SysUtils.TStringHelper.Trim
+ 0002:000000B8       System.TimeSpan.TTimeSpan.Create@
+ 0001:00000F7C       System.TimeSpan.TTimeSpan.Destroy@
+ 0001:00000F64       System.TypInfo.Finalization
+ 0002:000000A0       System.TypInfo.System.TypInfo
+ 0001:00000E24       System.UITypes.Finalization
+ 0002:00000010       System.UITypes.System.UITypes
+ 0001:00000F3C       System.Variants.Finalization
+ 0002:00000078       System.Variants.System.Variants
+ 0001:00000F34       System.VarUtils.Finalization
+ 0002:00000070       System.VarUtils.System.VarUtils
+ 0001:0000137C       System.Win.ComObj.Finalization
+ 0002:00000158       System.Win.ComObj.System.Win.ComObj
+ 0002:00000150       System.Win.ComObj.TComServerObject.Create@
+ 0001:00001374       System.Win.ComObj.TComServerObject.Destroy@
+ 0002:00000140       System.Win.Registry.TRegistry.Create@
+ 0001:00001364       System.Win.Registry.TRegistry.Destroy@
+ 0004:00000030       uspQuery..4
+ 0001:00001E40       uspQuery..EspGeradorSQLException
+ 0001:00001AD8       uspQuery..TspGeradorSQL
+ 0001:00001EF8       uspQuery..TspQuery
+ 0001:00003118       uspQuery.Finalization
+ 0001:000026EC       uspQuery.TspGeradorSQL.AjustaCondicoes
+ 0001:000027D4       uspQuery.TspGeradorSQL.Create
+ 0001:0000285C       uspQuery.TspGeradorSQL.Destroy
+ 0001:000028BC       uspQuery.TspGeradorSQL.GeraSQL
+ 0001:000029B0       uspQuery.TspGeradorSQL.GetColunas
+ 0001:000029CC       uspQuery.TspGeradorSQL.GetCondicoes
+ 0001:000029E8       uspQuery.TspGeradorSQL.GetSQL
+ 0001:00002A08       uspQuery.TspGeradorSQL.GetTabelas
+ 0001:00002A24       uspQuery.TspGeradorSQL.RetornaColunas
+ 0001:00002BE8       uspQuery.TspGeradorSQL.RetornaCondicoes
+ 0001:00002DBC       uspQuery.TspGeradorSQL.RetornaListaDelimitada
+ 0001:00002E40       uspQuery.TspGeradorSQL.RetornaTabelas
+ 0001:00002EF0       uspQuery.TspGeradorSQL.SetColunas
+ 0001:00002F0C       uspQuery.TspGeradorSQL.SetCondicoes
+ 0001:00002F28       uspQuery.TspGeradorSQL.SetTabelas
+ 0001:00002F44       uspQuery.TspGeradorSQL.VerificaMaisDeUmaTabelaInformada
+ 0001:000030FC       uspQuery.TspGeradorSQL.VerificaSQL
+ 0001:00003054       uspQuery.TspGeradorSQL.VerificaTabelaNaoInformada
+ 0001:0000252C       uspQuery.TspQuery.Create
+ 0001:00002598       uspQuery.TspQuery.GeraSQL
+ 0001:00002608       uspQuery.TspQuery.GetColunas
+ 0001:0000262C       uspQuery.TspQuery.GetCondicoes
+ 0001:00002650       uspQuery.TspQuery.GetTabelas
+ 0001:00002674       uspQuery.TspQuery.SetColunas
+ 0001:0000269C       uspQuery.TspQuery.SetCondicoes
+ 0001:000026C4       uspQuery.TspQuery.SetTabelas
+ 0002:000001C0       uspQuery.uspQuery
+ 0004:00000028       Winapi.PsAPI..1
+ 0001:00000E98       Winapi.PsAPI.Finalization
+ 0004:0000002C       Winapi.PsAPI.hPSAPI
+ 0002:00000030       Winapi.PsAPI.Winapi.PsAPI
+ 0004:00000020       Winapi.Windows..2
+ 0001:00000E78       Winapi.Windows.Finalization
+ 0001:00000E2C       Winapi.Windows.FreeLibrary
+ 0001:00000E34       Winapi.Windows.GetVersionEx
+ 0004:00000024       Winapi.Windows.HtmlHelpModule
+ 0001:00000E3C       Winapi.Windows.InitVersionInfo
+ 0003:00000088       Winapi.Windows.Win32MajorVersion
+ 0003:0000008C       Winapi.Windows.Win32MinorVersion
+ 0003:00000090       Winapi.Windows.Win32Platform
+ 0002:00000018       Winapi.Windows.Winapi.Windows
+
+
+  Address             Publics by Value
+
+ 0001:00000000       System.TObject.NewInstance
+ 0001:00000008       System.TObject.FreeInstance
+ 0001:00000010       System.TObject.Destroy
+ 0001:00000018       System.TObject.Free
+ 0001:00000020       System.TObject.Equals
+ 0001:00000028       System.TObject.GetHashCode
+ 0001:00000030       System.TObject.SafeCallException
+ 0001:00000038       System.TObject.ToString
+ 0001:00000040       System.TObject.DefaultHandler
+ 0001:00000048       System.TObject.AfterConstruction
+ 0001:00000050       System.TObject.BeforeDestruction
+ 0001:00000058       System.TObject.Dispatch
+ 0001:00000060       System.@ClassCreate
+ 0001:00000068       System.@ClassDestroy
+ 0001:00000070       System.@AfterConstruction
+ 0001:00000078       System.@BeforeDestruction
+ 0001:00000080       System.@HandleAnyException
+ 0001:00000088       System.@HandleFinally
+ 0001:00000090       System.@RaiseExcept
+ 0001:00000098       System.@DoneExcept
+ 0001:000000A0       System.@PackageLoad
+ 0001:000000A8       System.@PackageUnload
+ 0001:000000B0       System.@RunError
+ 0001:000000B8       System.@UStrClr
+ 0001:000000C0       System.@UStrArrayClr
+ 0001:000000C8       System.@UStrCat
+ 0001:000000D0       System.@UStrCat3
+ 0001:000000D8       System.@UStrCatN
+ 0001:000000E0       System.@UStrEqual
+ 0001:000000E8       System.RegisterModule
+ 0001:000000F0       System.UnregisterModule
+ 0001:000000F8       System.@IntfCopy
+ 0001:00000100       System.TInterfacedObject.AfterConstruction
+ 0001:00000108       System.TInterfacedObject.BeforeDestruction
+ 0001:00000110       System.TInterfacedObject.NewInstance
+ 0001:00000118       System.TInterfacedObject.QueryInterface
+ 0001:00000120       System.TInterfacedObject._AddRef
+ 0001:00000128       System.TInterfacedObject._Release
+ 0001:00000130       System.Finalization
+ 0001:00000138       SysInit.InterlockedExchange
+ 0001:00000148       SysInit.FreeLibrary
+ 0001:00000150       SysInit.LocalAlloc
+ 0001:00000158       SysInit.LocalFree
+ 0001:00000160       SysInit.TlsAlloc
+ 0001:00000168       SysInit.TlsFree
+ 0001:00000170       SysInit.TlsGetValue
+ 0001:00000178       SysInit.TlsSetValue
+ 0001:00000180       SysInit.GetLastError
+ 0001:00000188       SysInit.LoadLibraryA
+ 0001:00000190       SysInit.RaiseException
+ 0001:00000198       SysInit.GetProcAddress
+ 0001:000001A0       SysInit.AllocTlsBuffer
+ 0001:000001AC       SysInit.GetTlsSize
+ 0001:000001B4       SysInit.InitThreadTLS
+ 0001:000001F8       SysInit.InitProcessTLS
+ 0001:00000224       SysInit.ExitThreadTLS
+ 0001:0000025C       SysInit.ExitProcessTLS
+ 0001:00000280       SysInit.InitializeModule
+ 0001:0000028C       SysInit.UninitializeModule
+ 0001:000002B0       SysInit.@_dbkDummyProc
+ 0001:000002B4       SysInit.@_dbkFCallArgs
+ 0001:000006A4       SysInit.@_dbk_fcall_wrapper
+ 0001:000007D0       SysInit.@InitPkg
+ 0001:00000834       SysInit.@PackageLoad
+ 0001:00000840       SysInit.@PackageUnload
+ 0001:0000084C       SysInit.@_delayLoadHelper2
+ 0001:00000B2C       SysInit.@_FUnloadDelayLoadedDLL2
+ 0001:00000C3C       SysInit.@_HrLoadAllImportsForDll
+ 0001:00000CF4       SysInit.ShutdownDelayHelp2
+ 0001:00000CFC       SysInit...
+ 0001:00000D0C       SysInit...
+ 0001:00000D1C       SysInit...
+ 0001:00000D2C       SysInit...
+ 0001:00000D3C       SysInit...
+ 0001:00000D4C       SysInit...
+ 0001:00000D60       SysInit...
+ 0001:00000D90       SysInit...
+ 0001:00000DA8       SysInit...
+ 0001:00000DD0       SysInit...
+ 0001:00000DF4       SysInit...
+ 0001:00000E04       SysInit...
+ 0001:00000E14       SysInit.Finalization
+ 0001:00000E24       System.UITypes.Finalization
+ 0001:00000E2C       Winapi.Windows.FreeLibrary
+ 0001:00000E34       Winapi.Windows.GetVersionEx
+ 0001:00000E3C       Winapi.Windows.InitVersionInfo
+ 0001:00000E78       Winapi.Windows.Finalization
+ 0001:00000E98       Winapi.PsAPI.Finalization
+ 0001:00000EBC       System.Character.Finalization
+ 0001:00000EC4       System.Internal.ExcUtils.Finalization
+ 0001:00000ECC       System.SysUtils.TOSVersion.Destroy@
+ 0001:00000ED4       System.SysUtils.Exception.Create
+ 0001:00000EDC       System.SysUtils.Exception.Destroy
+ 0001:00000EE4       System.SysUtils.Exception.GetBaseException
+ 0001:00000EEC       System.SysUtils.Exception.RaisingException
+ 0001:00000EF4       System.SysUtils.Exception.ToString
+ 0001:00000EFC       System.SysUtils.Exception.Destroy@
+ 0001:00000F04       System.SysUtils.StringReplace
+ 0001:00000F0C       System.SysUtils.FreeAndNil
+ 0001:00000F14       System.SysUtils.TLanguages.Destroy@
+ 0001:00000F1C       System.SysUtils.TStringHelper.Trim
+ 0001:00000F24       System.SysUtils.TEncoding.Destroy@
+ 0001:00000F2C       System.SysUtils.Finalization
+ 0001:00000F34       System.VarUtils.Finalization
+ 0001:00000F3C       System.Variants.Finalization
+ 0001:00000F44       System.Math.Finalization
+ 0001:00000F4C       System.Rtti.TValue.Destroy@
+ 0001:00000F54       System.Rtti.TRttiContext.Destroy@
+ 0001:00000F5C       System.Rtti.Finalization
+ 0001:00000F64       System.TypInfo.Finalization
+ 0001:00000F6C       System.Generics.Defaults.TStringComparer.Destroy@
+ 0001:00000F74       System.Generics.Defaults.TIStringComparer.Destroy@
+ 0001:00000F7C       System.TimeSpan.TTimeSpan.Destroy@
+ 0001:00000F84       System.Classes.TComponent.Destroy@
+ 0001:00000F8C       System.Classes.TFieldsCache.Destroy@
+ 0001:00000F94       System.Classes.TPersistent.Assign
+ 0001:00000F9C       System.Classes.TPersistent.AssignTo
+ 0001:00000FA4       System.Classes.TStrings.SetStrictDelimiter
+ 0001:00000FAC       System.Classes.TStrings.Append
+ 0001:00000FB4       System.Classes.TStrings.SetStrings
+ 0001:00000FBC       System.Classes.TStrings.SetDelimitedText
+ 0001:00000FC4       System.Classes.TStringList.Create
+ 0001:00000FCC       System.Classes.TThread.Destroy@
+ 0001:00000FD4       System.Classes.TComponent.AsyncSchedule
+ 0001:00000FDC       System.Classes.TComponent.BeforeDestruction
+ 0001:00000FE4       System.Classes.TComponent.ReadState
+ 0001:00000FEC       System.Classes.TComponent.WriteState
+ 0001:00000FF4       System.Classes.TComponent.ValidateRename
+ 0001:00000FFC       System.Classes.TComponent.GetObservers
+ 0001:00001004       System.Classes.TComponent.UpdateAction
+ 0001:0000100C       System.Classes.TComponent.CanObserve
+ 0001:00001014       System.Classes.TComponent.ObserverAdded
+ 0001:0000101C       System.Classes.TComponent.SafeCallException
+ 0001:00001024       System.Classes.TComponent.UpdateRegistry
+ 0001:0000102C       System.Classes.TComponent.QueryInterface
+ 0001:00001034       System.Classes.TBinaryWriter.Destroy@
+ 0001:0000103C       System.Classes.TLoginCredentialService.Destroy@
+ 0001:00001044       System.Classes.TObserverMapping.Destroy@
+ 0001:0000104C       System.Classes.TBaseAsyncResult.Destroy@
+ 0001:00001054       System.Classes.Finalization
+ 0001:0000105C       System.DateUtils.TTimeZone.Destroy@
+ 0001:00001064       System.DateUtils.Finalization
+ 0001:0000106C       System.StrUtils.ContainsText
+ 0001:00001074       System.StrUtils.IfThen
+ 0001:0000107C       System.StrUtils.RightStr
+ 0001:00001084       Data.SqlTimSt.Finalization
+ 0001:0000108C       Data.FmtBcd.Finalization
+ 0001:00001094       Data.DB.TDataSet.SetName
+ 0001:0000109C       Data.DB.TDataSet.CreateNestedDataSet
+ 0001:000010A4       Data.DB.TDataSet.SetDataSetField
+ 0001:000010AC       Data.DB.TDataSet.CheckInactive
+ 0001:000010B4       Data.DB.TDataSet.CheckActive
+ 0001:000010BC       Data.DB.TDataSet.GetDetailDataSets
+ 0001:000010C4       Data.DB.TDataSet.GetDetailDataSets
+ 0001:000010CC       Data.DB.TDataSet.GetDetailLinkFields
+ 0001:000010D4       Data.DB.TDataSet.GetLookupListClass
+ 0001:000010DC       Data.DB.TDataSet.DefChanged
+ 0001:000010E4       Data.DB.TDataSet.InitFieldDefs
+ 0001:000010EC       Data.DB.TDataSet.SetFieldProps
+ 0001:000010F4       Data.DB.TDataSet.SetFieldDefProps
+ 0001:000010FC       Data.DB.TDataSet.GetFieldClass
+ 0001:00001104       Data.DB.TDataSet.GetCalcFieldTypes
+ 0001:0000110C       Data.DB.TDataSet.GetFieldFullName
+ 0001:00001114       Data.DB.TDataSet.CreateFields
+ 0001:0000111C       Data.DB.TDataSet.DestroyFields
+ 0001:00001124       Data.DB.TDataSet.CheckFieldCompatibility
+ 0001:0000112C       Data.DB.TDataSet.BindFields
+ 0001:00001134       Data.DB.TDataSet.FreeFieldBuffers
+ 0001:0000113C       Data.DB.TDataSet.GetBlobFieldData
+ 0001:00001144       Data.DB.TDataSet.GetFieldData
+ 0001:0000114C       Data.DB.TDataSet.GetFieldData
+ 0001:00001154       Data.DB.TDataSet.GetFieldData
+ 0001:0000115C       Data.DB.TDataSet.GetFieldData
+ 0001:00001164       Data.DB.TDataSet.SetFieldData
+ 0001:0000116C       Data.DB.TDataSet.SetFieldData
+ 0001:00001174       Data.DB.TDataSet.SetFieldData
+ 0001:0000117C       Data.DB.TDataSet.GetFieldNames
+ 0001:00001184       Data.DB.TDataSet.SetStateFieldValue
+ 0001:0000118C       Data.DB.TDataSet.DataConvert
+ 0001:00001194       Data.DB.TDataSet.DataConvert
+ 0001:0000119C       Data.DB.TDataSet.GetParamsClass
+ 0001:000011A4       Data.DB.TDataSet.GetFieldsClass
+ 0001:000011AC       Data.DB.TDataSet.GetAggFieldsClass
+ 0001:000011B4       Data.DB.TDataSet.GetFieldListClass
+ 0001:000011BC       Data.DB.TDataSet.GetFieldDefsClass
+ 0001:000011C4       Data.DB.TDataSet.GetIndexDefsClass
+ 0001:000011CC       Data.DB.TDataSet.GetFieldDefListClass
+ 0001:000011D4       Data.DB.TDataSet.GetCheckConstraintsClass
+ 0001:000011DC       Data.DB.TDataSet.SetBufListSize
+ 0001:000011E4       Data.DB.TDataSet.SetCurrentRecord
+ 0001:000011EC       Data.DB.TDataSet.GetNextRecord
+ 0001:000011F4       Data.DB.TDataSet.GetPriorRecord
+ 0001:000011FC       Data.DB.TDataSet.Resync
+ 0001:00001204       Data.DB.TDataSet.ClearBuffers
+ 0001:0000120C       Data.DB.TDataSet.ActivateBuffers
+ 0001:00001214       Data.DB.TDataSet.GetCurrentRecord
+ 0001:0000121C       Data.DB.TDataSet.GetNextRecords
+ 0001:00001224       Data.DB.TDataSet.GetPriorRecords
+ 0001:0000122C       Data.DB.TDataSet.InitRecord
+ 0001:00001234       Data.DB.TDataSet.GetCalcFields
+ 0001:0000123C       Data.DB.TDataSet.GetCalcFields
+ 0001:00001244       Data.DB.TDataSet.CalculateFields
+ 0001:0000124C       Data.DB.TDataSet.CalculateFields
+ 0001:00001254       Data.DB.TDataSet.MoveBy
+ 0001:0000125C       Data.DB.TDataSet.BlockReadNext
+ 0001:00001264       Data.DB.TDataSet.SetBlockReadSize
+ 0001:0000126C       Data.DB.TDataSet.Translate
+ 0001:00001274       Data.DB.TDataSet.InternalAddRecord
+ 0001:0000127C       Data.DB.TDataSet.InternalAddRecord
+ 0001:00001284       Data.DB.TDataSet.GetBookmark
+ 0001:0000128C       Data.DB.TDataSet.FreeBookmark
+ 0001:00001294       Data.DB.TDataSet.GetBookmarkStr
+ 0001:0000129C       Data.DB.TDataSet.SetBookmarkStr
+ 0001:000012A4       Data.DB.TDataSet.GetBookmarkData
+ 0001:000012AC       Data.DB.TDataSet.GetBookmarkData
+ 0001:000012B4       Data.DB.TDataSet.SetBookmarkData
+ 0001:000012BC       Data.DB.TDataSet.SetBookmarkData
+ 0001:000012C4       Data.DB.TDataSet.GetBookmarkFlag
+ 0001:000012CC       Data.DB.TDataSet.InternalSetToRecord
+ 0001:000012D4       Data.DB.TDataSet.GetAggRecordCount
+ 0001:000012DC       Data.DB.TDataSet.DoAfterCancel
+ 0001:000012E4       Data.DB.TDataSet.DoAfterClose
+ 0001:000012EC       Data.DB.TDataSet.DoAfterDelete
+ 0001:000012F4       Data.DB.TDataSet.DoAfterEdit
+ 0001:000012FC       Data.DB.TDataSet.DoAfterInsert
+ 0001:00001304       Data.DB.TDataSet.DoAfterPost
+ 0001:0000130C       Data.DB.TDataSet.DoAfterScroll
+ 0001:00001314       Data.DB.TDataSet.DoBeforeCancel
+ 0001:0000131C       Data.DB.TDataSet.DoBeforeClose
+ 0001:00001324       Data.DB.TDataSet.DoBeforeOpen
+ 0001:0000132C       Data.DB.TDataSet.DoBeforePost
+ 0001:00001334       Data.DB.TDataSet.DoBeforeRefresh
+ 0001:0000133C       Data.DB.TDataSet.DoOnCalcFields
+ 0001:00001344       Data.DB.Finalization
+ 0001:0000134C       System.SyncObjs.Finalization
+ 0001:00001354       System.IOUtils.TPath.Destroy@
+ 0001:0000135C       System.IniFiles.Finalization
+ 0001:00001364       System.Win.Registry.TRegistry.Destroy@
+ 0001:0000136C       System.AnsiStrings.Finalization
+ 0001:00001374       System.Win.ComObj.TComServerObject.Destroy@
+ 0001:0000137C       System.Win.ComObj.Finalization
+ 0001:00001384       FireDAC.Stan.Error.Finalization
+ 0001:0000138C       FireDAC.Stan.Util.Finalization
+ 0001:00001394       FireDAC.Stan.Intf.Finalization
+ 0001:0000139C       FireDAC.Stan.SQLTimeInt.Finalization
+ 0001:000013A4       FireDAC.DatS.Finalization
+ 0001:000013AC       FireDAC.UI.Intf.Finalization
+ 0001:000013B4       FireDAC.Stan.Factory.Finalization
+ 0001:000013BC       FireDAC.Stan.Option.Finalization
+ 0001:000013C4       FireDAC.Stan.Param.Finalization
+ 0001:000013CC       FireDAC.Comp.DataSet.TFDDataSet.InternalHandleException
+ 0001:000013D4       FireDAC.Comp.DataSet.TFDDataSet.DataEvent
+ 0001:000013DC       FireDAC.Comp.DataSet.TFDDataSet.IsSequenced
+ 0001:000013E4       FireDAC.Comp.DataSet.TFDDataSet.SetActive
+ 0001:000013EC       FireDAC.Comp.DataSet.TFDDataSet.GetDataSource
+ 0001:000013F4       FireDAC.Comp.DataSet.TFDDataSet.GetDetailLinkFields
+ 0001:000013FC       FireDAC.Comp.DataSet.TFDDataSet.MasterDefined
+ 0001:00001404       FireDAC.Comp.DataSet.TFDDataSet.DoMasterParamChanged
+ 0001:0000140C       FireDAC.Comp.DataSet.TFDDataSet.DoMasterReset
+ 0001:00001414       FireDAC.Comp.DataSet.TFDDataSet.MasterDisabled
+ 0001:0000141C       FireDAC.Comp.DataSet.TFDDataSet.CheckMasterRange
+ 0001:00001424       FireDAC.Comp.DataSet.TFDDataSet.MasterChanged
+ 0001:0000142C       FireDAC.Comp.DataSet.TFDDataSet.CreateFilterView
+ 0001:00001434       FireDAC.Comp.DataSet.TFDDataSet.UpdateIndexDefs
+ 0001:0000143C       FireDAC.Comp.DataSet.TFDDataSet.DoCreateFields
+ 0001:00001444       FireDAC.Comp.DataSet.TFDDataSet.DoBeforeExecute
+ 0001:0000144C       FireDAC.Comp.DataSet.TFDDataSet.DoAfterExecute
+ 0001:00001454       FireDAC.Comp.DataSet.TFDDataSet.CloseCursor
+ 0001:0000145C       FireDAC.Comp.DataSet.TFDDataSet.InternalOpen
+ 0001:00001464       FireDAC.Comp.DataSet.TFDDataSet.DoAfterOpen
+ 0001:0000146C       FireDAC.Comp.DataSet.TFDDataSet.IsCursorOpen
+ 0001:00001474       FireDAC.Comp.DataSet.TFDDataSet.Execute
+ 0001:0000147C       FireDAC.Comp.DataSet.TFDDataSet.ClearCalcFields
+ 0001:00001484       FireDAC.Comp.DataSet.TFDDataSet.InternalInitFieldDefs
+ 0001:0000148C       FireDAC.Comp.DataSet.TFDDataSet.InternalInitRecord
+ 0001:00001494       FireDAC.Comp.DataSet.TFDDataSet.GetFieldClass
+ 0001:0000149C       FireDAC.Comp.DataSet.TFDDataSet.CalcBookmarkSize
+ 0001:000014A4       FireDAC.Comp.DataSet.TFDDataSet.InitBufferPointers
+ 0001:000014AC       FireDAC.Comp.DataSet.TFDDataSet.GetRecordSize
+ 0001:000014B4       FireDAC.Comp.DataSet.TFDDataSet.AllocRecordBuffer
+ 0001:000014BC       FireDAC.Comp.DataSet.TFDDataSet.FreeRecordBuffer
+ 0001:000014C4       FireDAC.Comp.DataSet.TFDDataSet.ClearCalcFields
+ 0001:000014CC       FireDAC.Comp.DataSet.TFDDataSet.RefreshInternalCalcFields
+ 0001:000014D4       FireDAC.Comp.DataSet.TFDDataSet.RefreshInternalCalcFields
+ 0001:000014DC       FireDAC.Comp.DataSet.TFDDataSet.GetRecord
+ 0001:000014E4       FireDAC.Comp.DataSet.TFDDataSet.GetRecord
+ 0001:000014EC       FireDAC.Comp.DataSet.TFDDataSet.GetCurrentRecord
+ 0001:000014F4       FireDAC.Comp.DataSet.TFDDataSet.GetRecordCount
+ 0001:000014FC       FireDAC.Comp.DataSet.TFDDataSet.GetRecNo
+ 0001:00001504       FireDAC.Comp.DataSet.TFDDataSet.InternalSetRecNo
+ 0001:0000150C       FireDAC.Comp.DataSet.TFDDataSet.SetRecNo
+ 0001:00001514       FireDAC.Comp.DataSet.TFDDataSet.GetFieldData
+ 0001:0000151C       FireDAC.Comp.DataSet.TFDDataSet.GetFieldData
+ 0001:00001524       FireDAC.Comp.DataSet.TFDDataSet.GetStateFieldValue
+ 0001:0000152C       FireDAC.Comp.DataSet.TFDDataSet.SetFieldData
+ 0001:00001534       FireDAC.Comp.DataSet.TFDDataSet.CreateBlobStream
+ 0001:0000153C       FireDAC.Comp.DataSet.TFDDataSet.CloseBlob
+ 0001:00001544       FireDAC.Comp.DataSet.TFDDataSet.GetModifiedBlobCached
+ 0001:0000154C       FireDAC.Comp.DataSet.TFDDataSet.DoPurge
+ 0001:00001554       FireDAC.Comp.DataSet.TFDDataSet.DoAdjustSortFields
+ 0001:0000155C       FireDAC.Comp.DataSet.TFDDataSet.DoSortOrderChanging
+ 0001:00001564       FireDAC.Comp.DataSet.TFDDataSet.DoSortOrderChanged
+ 0001:0000156C       FireDAC.Comp.DataSet.TFDDataSet.DoBeforeGetRecords
+ 0001:00001574       FireDAC.Comp.DataSet.TFDDataSet.DoAfterGetRecords
+ 0001:0000157C       FireDAC.Comp.DataSet.TFDDataSet.DoBeforeRowRequest
+ 0001:00001584       FireDAC.Comp.DataSet.TFDDataSet.DoAfterRowRequest
+ 0001:0000158C       FireDAC.Comp.DataSet.TFDDataSet.DoBeforeScroll
+ 0001:00001594       FireDAC.Comp.DataSet.TFDDataSet.DoAfterRefresh
+ 0001:0000159C       FireDAC.Comp.DataSet.TFDDataSet.GetCanModify
+ 0001:000015A4       FireDAC.Comp.DataSet.TFDDataSet.GetCanRefresh
+ 0001:000015AC       FireDAC.Comp.DataSet.TFDDataSet.InternalFirst
+ 0001:000015B4       FireDAC.Comp.DataSet.TFDDataSet.InternalLast
+ 0001:000015BC       FireDAC.Comp.DataSet.TFDDataSet.InternalEdit
+ 0001:000015C4       FireDAC.Comp.DataSet.TFDDataSet.InternalInsert
+ 0001:000015CC       FireDAC.Comp.DataSet.TFDDataSet.DoBeforeInsert
+ 0001:000015D4       FireDAC.Comp.DataSet.TFDDataSet.DoBeforeEdit
+ 0001:000015DC       FireDAC.Comp.DataSet.TFDDataSet.DoBeforeDelete
+ 0001:000015E4       FireDAC.Comp.DataSet.TFDDataSet.InternalPost
+ 0001:000015EC       FireDAC.Comp.DataSet.TFDDataSet.Post
+ 0001:000015F4       FireDAC.Comp.DataSet.TFDDataSet.InternalDelete
+ 0001:000015FC       FireDAC.Comp.DataSet.TFDDataSet.InternalRefresh
+ 0001:00001604       FireDAC.Comp.DataSet.TFDDataSet.InternalCancel
+ 0001:0000160C       FireDAC.Comp.DataSet.TFDDataSet.Cancel
+ 0001:00001614       FireDAC.Comp.DataSet.TFDDataSet.InternalAddRecord
+ 0001:0000161C       FireDAC.Comp.DataSet.TFDDataSet.InternalInitRecord
+ 0001:00001624       FireDAC.Comp.DataSet.TFDDataSet.InitRecord
+ 0001:0000162C       FireDAC.Comp.DataSet.TFDDataSet.DoOnNewRecord
+ 0001:00001634       FireDAC.Comp.DataSet.TFDDataSet.DoUpdateErrorHandler
+ 0001:0000163C       FireDAC.Comp.DataSet.TFDDataSet.DoUpdateRecordHandler
+ 0001:00001644       FireDAC.Comp.DataSet.TFDDataSet.DoReconcileErrorHandler
+ 0001:0000164C       FireDAC.Comp.DataSet.TFDDataSet.InternalGotoBookmark
+ 0001:00001654       FireDAC.Comp.DataSet.TFDDataSet.InternalGotoBookmark
+ 0001:0000165C       FireDAC.Comp.DataSet.TFDDataSet.InternalSetToRecord
+ 0001:00001664       FireDAC.Comp.DataSet.TFDDataSet.GetBookmarkFlag
+ 0001:0000166C       FireDAC.Comp.DataSet.TFDDataSet.SetBookmarkFlag
+ 0001:00001674       FireDAC.Comp.DataSet.TFDDataSet.GetBookmarkData
+ 0001:0000167C       FireDAC.Comp.DataSet.TFDDataSet.SetBookmarkData
+ 0001:00001684       FireDAC.Comp.DataSet.TFDDataSet.SetBookmarkFlag
+ 0001:0000168C       FireDAC.Comp.DataSet.TFDDataSet.CompareBookmarks
+ 0001:00001694       FireDAC.Comp.DataSet.TFDDataSet.BookmarkValid
+ 0001:0000169C       FireDAC.Comp.DataSet.TFDDataSet.GetAggregateValue
+ 0001:000016A4       FireDAC.Comp.DataSet.TFDDataSet.ResetAggField
+ 0001:000016AC       FireDAC.Comp.DataSet.TFDDataSet.GetIsIndexField
+ 0001:000016B4       FireDAC.Comp.DataSet.TFDDataSet.InternalDefaultKeyFieldCount
+ 0001:000016BC       FireDAC.Comp.DataSet.TFDDataSet.InternalGotoKey
+ 0001:000016C4       FireDAC.Comp.DataSet.TFDDataSet.InternalResetRange
+ 0001:000016CC       FireDAC.Comp.DataSet.TFDDataSet.Locate
+ 0001:000016D4       FireDAC.Comp.DataSet.TFDDataSet.LocateEx
+ 0001:000016DC       FireDAC.Comp.DataSet.TFDDataSet.LocateEx
+ 0001:000016E4       FireDAC.Comp.DataSet.TFDDataSet.Lookup
+ 0001:000016EC       FireDAC.Comp.DataSet.TFDDataSet.LookupEx
+ 0001:000016F4       FireDAC.Comp.DataSet.TFDDataSet.LookupEx
+ 0001:000016FC       FireDAC.Comp.DataSet.TFDDataSet.DoFilteringUpdated
+ 0001:00001704       FireDAC.Comp.DataSet.TFDDataSet.SetFilterOptions
+ 0001:0000170C       FireDAC.Comp.DataSet.TFDDataSet.SetFilterText
+ 0001:00001714       FireDAC.Comp.DataSet.TFDDataSet.SetFiltered
+ 0001:0000171C       FireDAC.Comp.DataSet.TFDDataSet.SetOnFilterRecord
+ 0001:00001724       FireDAC.Comp.DataSet.TFDDataSet.DoFilterRow
+ 0001:0000172C       FireDAC.Comp.DataSet.TFDDataSet.FindRecord
+ 0001:00001734       FireDAC.Comp.DataSet.TFDDataSet.CloneCursor
+ 0001:0000173C       FireDAC.Comp.DataSet.TFDDataSet.GetClonedDataSet
+ 0001:00001744       FireDAC.Comp.DataSet.TFDDataSet.CreateDataSet
+ 0001:0000174C       FireDAC.Comp.DataSet.TFDDataSet.GetExists
+ 0001:00001754       FireDAC.Comp.DataSet.TFDDataSet.LoadFromStorage
+ 0001:0000175C       FireDAC.Comp.DataSet.TFDDataSet.SaveToStorage
+ 0001:00001764       FireDAC.Comp.DataSet.TFDDataSet.SaveToDFM
+ 0001:0000176C       FireDAC.Comp.DataSet.TFDDataSet.DoCachedUpdatesChanged
+ 0001:00001774       FireDAC.Comp.DataSet.TFDDataSet.DoBeforeApplyUpdate
+ 0001:0000177C       FireDAC.Comp.DataSet.TFDDataSet.DoAfterApplyUpdate
+ 0001:00001784       FireDAC.Comp.DataSet.TFDDataSet.UpdateStatus
+ 0001:0000178C       FireDAC.Comp.DataSet.TFDDataSet.PSExecute
+ 0001:00001794       FireDAC.Comp.DataSet.TFDDataSet.PSReset
+ 0001:0000179C       FireDAC.Comp.DataSet.TFDDataSet.PSGetDefaultOrder
+ 0001:000017A4       FireDAC.Comp.DataSet.TFDDataSet.PSGetIndexDefs
+ 0001:000017AC       FireDAC.Comp.DataSet.TFDDataSet.PSGetKeyFields
+ 0001:000017B4       FireDAC.Comp.DataSet.TFDDataSet.PSGetTableName
+ 0001:000017BC       FireDAC.Comp.DataSet.TFDDataSet.PSGetUpdateException
+ 0001:000017C4       FireDAC.Comp.DataSet.TFDDataSet.PSUpdateRecord
+ 0001:000017CC       FireDAC.Stan.Expr.Finalization
+ 0001:000017D4       FireDAC.Comp.Client.TFDCustomManager.Destroy@
+ 0001:000017DC       FireDAC.Comp.Client.TFDAdaptedDataSet.Notification
+ 0001:000017E4       FireDAC.Comp.Client.TFDAdaptedDataSet.GetParams
+ 0001:000017EC       FireDAC.Comp.Client.TFDAdaptedDataSet.CheckOnline
+ 0001:000017F4       FireDAC.Comp.Client.TFDAdaptedDataSet.AttachTable
+ 0001:000017FC       FireDAC.Comp.Client.TFDAdaptedDataSet.DoCloneCursor
+ 0001:00001804       FireDAC.Comp.Client.TFDAdaptedDataSet.ServerDeleteAll
+ 0001:0000180C       FireDAC.Comp.Client.TFDAdaptedDataSet.DoMasterDefined
+ 0001:00001814       FireDAC.Comp.Client.TFDAdaptedDataSet.DoMasterParamSetValues
+ 0001:0000181C       FireDAC.Comp.Client.TFDAdaptedDataSet.DoMasterParamDependent
+ 0001:00001824       FireDAC.Comp.Client.TFDAdaptedDataSet.DoPrepareSource
+ 0001:0000182C       FireDAC.Comp.Client.TFDAdaptedDataSet.DoUnprepareSource
+ 0001:00001834       FireDAC.Comp.Client.TFDAdaptedDataSet.DoDefineDatSManager
+ 0001:0000183C       FireDAC.Comp.Client.TFDAdaptedDataSet.DoOpenSource
+ 0001:00001844       FireDAC.Comp.Client.TFDAdaptedDataSet.DoIsSourceOpen
+ 0001:0000184C       FireDAC.Comp.Client.TFDAdaptedDataSet.DoIsSourceAsync
+ 0001:00001854       FireDAC.Comp.Client.TFDAdaptedDataSet.DoIsSourceOnline
+ 0001:0000185C       FireDAC.Comp.Client.TFDAdaptedDataSet.DoCloseSource
+ 0001:00001864       FireDAC.Comp.Client.TFDAdaptedDataSet.DoResetDatSManager
+ 0001:0000186C       FireDAC.Comp.Client.TFDAdaptedDataSet.DoResetAtLoading
+ 0001:00001874       FireDAC.Comp.Client.TFDAdaptedDataSet.DoGetDatSManager
+ 0001:0000187C       FireDAC.Comp.Client.TFDAdaptedDataSet.DoGetTableName
+ 0001:00001884       FireDAC.Comp.Client.TFDAdaptedDataSet.DoFetch
+ 0001:0000188C       FireDAC.Comp.Client.TFDAdaptedDataSet.DoFetch
+ 0001:00001894       FireDAC.Comp.Client.TFDAdaptedDataSet.DoMasterClearDetails
+ 0001:0000189C       FireDAC.Comp.Client.TFDAdaptedDataSet.DoExecuteSource
+ 0001:000018A4       FireDAC.Comp.Client.TFDAdaptedDataSet.DoApplyUpdates
+ 0001:000018AC       FireDAC.Comp.Client.TFDAdaptedDataSet.DoProcessUpdateRequest
+ 0001:000018B4       FireDAC.Comp.Client.TFDAdaptedDataSet.GetOptionsIntf
+ 0001:000018BC       FireDAC.Comp.Client.TFDAdaptedDataSet.SetOptionsIntf
+ 0001:000018C4       FireDAC.Comp.Client.TFDAdaptedDataSet.DoStoredActivation
+ 0001:000018CC       FireDAC.Comp.Client.TFDAdaptedDataSet.GetConn
+ 0001:000018D4       FireDAC.Comp.Client.TFDAdaptedDataSet.GetFeatures
+ 0001:000018DC       FireDAC.Comp.Client.TFDAdaptedDataSet.PSInTransaction
+ 0001:000018E4       FireDAC.Comp.Client.TFDAdaptedDataSet.PSStartTransaction
+ 0001:000018EC       FireDAC.Comp.Client.TFDAdaptedDataSet.PSEndTransaction
+ 0001:000018F4       FireDAC.Comp.Client.TFDAdaptedDataSet.PSIsSQLBased
+ 0001:000018FC       FireDAC.Comp.Client.TFDAdaptedDataSet.PSIsSQLSupported
+ 0001:00001904       FireDAC.Comp.Client.TFDAdaptedDataSet.PSGetQuoteChar
+ 0001:0000190C       FireDAC.Comp.Client.TFDAdaptedDataSet.PSGetParams
+ 0001:00001914       FireDAC.Comp.Client.TFDAdaptedDataSet.PSSetParams
+ 0001:0000191C       FireDAC.Comp.Client.TFDAdaptedDataSet.PSGetCommandText
+ 0001:00001924       FireDAC.Comp.Client.TFDAdaptedDataSet.PSSetCommandText
+ 0001:0000192C       FireDAC.Comp.Client.TFDAdaptedDataSet.PSExecuteStatement
+ 0001:00001934       FireDAC.Comp.Client.TFDAdaptedDataSet.PSExecuteStatement
+ 0001:0000193C       FireDAC.Comp.Client.TFDAdaptedDataSet.PSExecuteStatement
+ 0001:00001944       FireDAC.Comp.Client.TFDAdaptedDataSet.PSGetAttributes
+ 0001:0000194C       FireDAC.Comp.Client.TFDAdaptedDataSet.GetCommandStates
+ 0001:00001954       FireDAC.Comp.Client.TFDAdaptedDataSet.ExecuteCommand
+ 0001:0000195C       FireDAC.Comp.Client.TFDRdbmsDataSet.Destroy
+ 0001:00001964       FireDAC.Comp.Client.TFDRdbmsDataSet.Loaded
+ 0001:0000196C       FireDAC.Comp.Client.TFDRdbmsDataSet.InternalCreateAdapter
+ 0001:00001974       FireDAC.Comp.Client.TFDRdbmsDataSet.SetTransaction
+ 0001:0000197C       FireDAC.Comp.Client.TFDRdbmsDataSet.SetUpdateTransaction
+ 0001:00001984       FireDAC.Comp.Client.TFDRdbmsDataSet.ReleaseBase
+ 0001:0000198C       FireDAC.Comp.Client.TFDRdbmsDataSet.CheckCachedUpdatesMode
+ 0001:00001994       FireDAC.Comp.Client.TFDRdbmsDataSet.OpenCursor
+ 0001:0000199C       FireDAC.Comp.Client.TFDRdbmsDataSet.DoAfterOpenOrExecute
+ 0001:000019A4       FireDAC.Comp.Client.TFDRdbmsDataSet.InternalClose
+ 0001:000019AC       FireDAC.Comp.Client.TFDRdbmsDataSet.Disconnect
+ 0001:000019B4       FireDAC.Comp.Client.TFDRdbmsDataSet.PSGetCommandType
+ 0001:000019BC       FireDAC.Comp.Client.TFDCustomQuery.Create
+ 0001:000019C4       FireDAC.Comp.Client.TFDCustomQuery.DefineProperties
+ 0001:000019CC       FireDAC.Comp.Client.TFDCustomQuery.GetSQL
+ 0001:000019D4       FireDAC.Comp.Client.TFDCustomQuery.UpdateRecordCount
+ 0001:000019DC       FireDAC.Comp.Client.Finalization
+ 0001:00001AD8       uspQuery..TspGeradorSQL
+ 0001:00001E40       uspQuery..EspGeradorSQLException
+ 0001:00001EF8       uspQuery..TspQuery
+ 0001:0000252C       uspQuery.TspQuery.Create
+ 0001:00002598       uspQuery.TspQuery.GeraSQL
+ 0001:00002608       uspQuery.TspQuery.GetColunas
+ 0001:0000262C       uspQuery.TspQuery.GetCondicoes
+ 0001:00002650       uspQuery.TspQuery.GetTabelas
+ 0001:00002674       uspQuery.TspQuery.SetColunas
+ 0001:0000269C       uspQuery.TspQuery.SetCondicoes
+ 0001:000026C4       uspQuery.TspQuery.SetTabelas
+ 0001:000026EC       uspQuery.TspGeradorSQL.AjustaCondicoes
+ 0001:000027D4       uspQuery.TspGeradorSQL.Create
+ 0001:0000285C       uspQuery.TspGeradorSQL.Destroy
+ 0001:000028BC       uspQuery.TspGeradorSQL.GeraSQL
+ 0001:000029B0       uspQuery.TspGeradorSQL.GetColunas
+ 0001:000029CC       uspQuery.TspGeradorSQL.GetCondicoes
+ 0001:000029E8       uspQuery.TspGeradorSQL.GetSQL
+ 0001:00002A08       uspQuery.TspGeradorSQL.GetTabelas
+ 0001:00002A24       uspQuery.TspGeradorSQL.RetornaColunas
+ 0001:00002BE8       uspQuery.TspGeradorSQL.RetornaCondicoes
+ 0001:00002DBC       uspQuery.TspGeradorSQL.RetornaListaDelimitada
+ 0001:00002E40       uspQuery.TspGeradorSQL.RetornaTabelas
+ 0001:00002EF0       uspQuery.TspGeradorSQL.SetColunas
+ 0001:00002F0C       uspQuery.TspGeradorSQL.SetCondicoes
+ 0001:00002F28       uspQuery.TspGeradorSQL.SetTabelas
+ 0001:00002F44       uspQuery.TspGeradorSQL.VerificaMaisDeUmaTabelaInformada
+ 0001:00003054       uspQuery.TspGeradorSQL.VerificaTabelaNaoInformada
+ 0001:000030FC       uspQuery.TspGeradorSQL.VerificaSQL
+ 0001:00003118       uspQuery.Finalization
+ 0001:000034A0       .spComponentes.@GetPackageInfoTable
+ 0001:000034A8       .spComponentes.@PackageLoad
+ 0001:000034B4       .spComponentes.@PackageUnload
+ 0002:00000000       System.System
+ 0002:00000008       SysInit.SysInit
+ 0002:00000010       System.UITypes.System.UITypes
+ 0002:00000018       Winapi.Windows.Winapi.Windows
+ 0002:00000030       Winapi.PsAPI.Winapi.PsAPI
+ 0002:00000038       System.Character.System.Character
+ 0002:00000040       System.Internal.ExcUtils.System.Internal.ExcUtils
+ 0002:00000048       System.SysUtils.TLanguages.Create@
+ 0002:00000050       System.SysUtils.TEncoding.Create@
+ 0002:00000058       System.SysUtils.Exception.Create@
+ 0002:00000060       System.SysUtils.TOSVersion.Create@
+ 0002:00000068       System.SysUtils.System.SysUtils
+ 0002:00000070       System.VarUtils.System.VarUtils
+ 0002:00000078       System.Variants.System.Variants
+ 0002:00000080       System.Math.System.Math
+ 0002:00000088       System.Rtti.TRttiContext.Create@
+ 0002:00000090       System.Rtti.TValue.Create@
+ 0002:00000098       System.Rtti.System.Rtti
+ 0002:000000A0       System.TypInfo.System.TypInfo
+ 0002:000000A8       System.Generics.Defaults.TStringComparer.Create@
+ 0002:000000B0       System.Generics.Defaults.TIStringComparer.Create@
+ 0002:000000B8       System.TimeSpan.TTimeSpan.Create@
+ 0002:000000C0       System.Classes.TObserverMapping.Create@
+ 0002:000000C8       System.Classes.TBinaryWriter.Create@
+ 0002:000000D0       System.Classes.TFieldsCache.Create@
+ 0002:000000D8       System.Classes.TThread.Create@
+ 0002:000000E0       System.Classes.TComponent.Create@
+ 0002:000000E8       System.Classes.TLoginCredentialService.Create@
+ 0002:000000F0       System.Classes.TBaseAsyncResult.Create@
+ 0002:000000F8       System.Classes.System.Classes
+ 0002:00000100       System.DateUtils.TTimeZone.Create@
+ 0002:00000108       System.DateUtils.System.DateUtils
+ 0002:00000110       Data.SqlTimSt.Data.SqlTimSt
+ 0002:00000118       Data.FmtBcd.Data.FmtBcd
+ 0002:00000120       Data.DB.Data.DB
+ 0002:00000128       System.SyncObjs.System.SyncObjs
+ 0002:00000130       System.IOUtils.TPath.Create@
+ 0002:00000138       System.IniFiles.System.IniFiles
+ 0002:00000140       System.Win.Registry.TRegistry.Create@
+ 0002:00000148       System.AnsiStrings.System.AnsiStrings
+ 0002:00000150       System.Win.ComObj.TComServerObject.Create@
+ 0002:00000158       System.Win.ComObj.System.Win.ComObj
+ 0002:00000160       FireDAC.Stan.Error.FireDAC.Stan.Error
+ 0002:00000168       FireDAC.Stan.Util.FireDAC.Stan.Util
+ 0002:00000170       FireDAC.Stan.Intf.FireDAC.Stan.Intf
+ 0002:00000178       FireDAC.Stan.SQLTimeInt.FireDAC.Stan.SQLTimeInt
+ 0002:00000180       FireDAC.DatS.FireDAC.DatS
+ 0002:00000188       FireDAC.UI.Intf.FireDAC.UI.Intf
+ 0002:00000190       FireDAC.Stan.Factory.FireDAC.Stan.Factory
+ 0002:00000198       FireDAC.Stan.Option.FireDAC.Stan.Option
+ 0002:000001A0       FireDAC.Stan.Param.FireDAC.Stan.Param
+ 0002:000001A8       FireDAC.Stan.Expr.FireDAC.Stan.Expr
+ 0002:000001B0       FireDAC.Comp.Client.TFDCustomManager.Create@
+ 0002:000001B8       FireDAC.Comp.Client.FireDAC.Comp.Client
+ 0002:000001C0       uspQuery.uspQuery
+ 0002:000001C8       .spComponentes..spComponentes
+ 0003:00000000       SysInit.TlsIndex
+ 0003:00000004       SysInit.PtrToNil
+ 0003:00000008       SysInit.Module
+ 0003:00000024       SysInit.TlsProc
+ 0003:00000034       SysInit...
+ 0003:00000088       Winapi.Windows.Win32MajorVersion
+ 0003:0000008C       Winapi.Windows.Win32MinorVersion
+ 0003:00000090       Winapi.Windows.Win32Platform
+ 0004:FFFF9000       SysInit.__ImageBase
+ 0004:00000000       SysInit.ModuleIsLib
+ 0004:00000001       SysInit.ModuleIsPackage
+ 0004:00000004       SysInit.HInstance
+ 0004:0000000C       SysInit.dbkFCallWrapperAddr
+ 0004:00000010       SysInit.@_pfnDliNotifyHook2
+ 0004:00000014       SysInit.@_pfnDliFailureHook2
+ 0004:00000018       SysInit..1
+ 0004:0000001C       SysInit.tlsBuffer
+ 0004:00000020       Winapi.Windows..2
+ 0004:00000024       Winapi.Windows.HtmlHelpModule
+ 0004:00000028       Winapi.PsAPI..1
+ 0004:0000002C       Winapi.PsAPI.hPSAPI
+ 0004:00000030       uspQuery..4
+ 0005:00000000       SysInit.TlsLast
+
+
+Line numbers for SysInit(SysInit.pas) segment .text
+
+   396 0001:00000138   397 0001:0000013B   398 0001:00000144   401 0001:00000148
+   428 0001:00000150   431 0001:00000158   434 0001:00000160   437 0001:00000168
+   440 0001:00000170   443 0001:00000178   458 0001:00000180   478 0001:00000188
+   480 0001:00000190   481 0001:00000198   566 0001:000001A0   567 0001:000001A8
+   701 0001:000001AC   705 0001:000001B1   712 0001:000001B4   713 0001:000001B5
+   714 0001:000001BC   718 0001:000001C0   719 0001:000001C9   720 0001:000001D3
+   721 0001:000001DA   722 0001:000001DE   724 0001:000001EA   725 0001:000001F6
+   730 0001:000001F8   732 0001:00000201   733 0001:0000020B   734 0001:00000210
+   735 0001:00000220   741 0001:00000224   743 0001:0000022D   745 0001:00000236
+   746 0001:00000241   748 0001:00000245   749 0001:0000024B   752 0001:00000258
+   756 0001:0000025C   758 0001:00000265   759 0001:0000026A   760 0001:00000273
+   761 0001:0000027E   877 0001:00000280   878 0001:0000028A   889 0001:0000028C
+   890 0001:00000296   891 0001:000002A7   892 0001:000002AD   974 0001:000002B0
+   983 0001:000002B4   984 0001:000002B7   985 0001:000002CB   986 0001:000002DF
+   987 0001:000002F3   988 0001:00000307   989 0001:0000031B   990 0001:0000032F
+   991 0001:00000343   992 0001:00000357   993 0001:0000036B   994 0001:0000037F
+   995 0001:00000393   996 0001:000003A7   997 0001:000003BB   998 0001:000003CF
+   999 0001:000003E3  1000 0001:000003F7  1001 0001:0000040B  1002 0001:0000041F
+  1003 0001:00000433  1004 0001:00000447  1005 0001:0000045B  1006 0001:0000046F
+  1007 0001:00000483  1008 0001:00000497  1009 0001:000004AB  1010 0001:000004BF
+  1011 0001:000004D3  1012 0001:000004E7  1013 0001:000004FB  1014 0001:0000050F
+  1015 0001:00000523  1016 0001:00000537  1017 0001:0000054B  1018 0001:0000055F
+  1019 0001:00000573  1020 0001:00000587  1021 0001:0000059B  1022 0001:000005AF
+  1023 0001:000005C3  1024 0001:000005D7  1025 0001:000005EB  1026 0001:000005FF
+  1027 0001:00000613  1028 0001:00000627  1029 0001:0000063B  1030 0001:0000064F
+  1031 0001:00000663  1032 0001:00000677  1033 0001:0000068B  1035 0001:0000069F
+  1175 0001:000006A4  1176 0001:000006AB  1177 0001:000006B0  1178 0001:000006BE
+  1183 0001:0000074A  1188 0001:000007C9  1206 0001:000007D0  1207 0001:000007DB
+  1208 0001:000007E2  1209 0001:000007E9  1210 0001:000007EE  1211 0001:000007F6
+  1212 0001:000007FE  1213 0001:00000803  1214 0001:0000080C  1215 0001:00000815
+  1216 0001:0000081A  1217 0001:00000821  1218 0001:00000825  1219 0001:0000082A
+  1220 0001:0000082D  1290 0001:00000834  1291 0001:0000083E  1295 0001:00000840
+  1296 0001:0000084A
+
+Line numbers for SysInit(C:\Builds\TP\runtime\rtl\sys\delayhlp.cpp) segment .text
+
+   223 0001:0000084C   231 0001:00000852   223 0001:00000857   231 0001:0000085A
+   223 0001:0000085D   231 0001:00000860   242 0001:000008BF   231 0001:000008C2
+   242 0001:000008C5   253 0001:000008E2   254 0001:000008E8   256 0001:000008F7
+   262 0001:00000909   265 0001:00000910   271 0001:00000913   265 0001:0000091B
+   271 0001:0000091D   272 0001:00000928   274 0001:0000092B   276 0001:00000933
+   278 0001:00000940   279 0001:00000944   280 0001:00000953   282 0001:00000955
+   288 0001:00000960   290 0001:00000962   291 0001:0000096B   293 0001:00000979
+   294 0001:0000097D   300 0001:00000982   301 0001:0000098A   302 0001:00000993
+   304 0001:000009A1   305 0001:000009A5   307 0001:000009B0   308 0001:000009B4
+   309 0001:000009BC   314 0001:000009C5   317 0001:000009D3   318 0001:000009D7
+   320 0001:000009E5   331 0001:000009F7   339 0001:000009FF   340 0001:00000A09
+   342 0001:00000A0D   345 0001:00000A13   347 0001:00000A3E   349 0001:00000A40
+   356 0001:00000A46   357 0001:00000A49   358 0001:00000A52   360 0001:00000A60
+   361 0001:00000A64   364 0001:00000A70   366 0001:00000A75   373 0001:00000A94
+   374 0001:00000A9D   375 0001:00000AA1   380 0001:00000AA3   383 0001:00000AAF
+   384 0001:00000AB3   385 0001:00000ABB   389 0001:00000AC4   391 0001:00000AD2
+   392 0001:00000AD6   394 0001:00000AE4   405 0001:00000AF6   410 0001:00000AF9
+   413 0001:00000AFE   414 0001:00000B07   415 0001:00000B0C   416 0001:00000B0F
+   417 0001:00000B12   419 0001:00000B1E   420 0001:00000B20   424 0001:00000B2C
+   426 0001:00000B32   424 0001:00000B34   426 0001:00000B3A   429 0001:00000B3D
+   431 0001:00000B4F   432 0001:00000B5D   433 0001:00000B6C   439 0001:00000B76
+   440 0001:00000B78   439 0001:00000B7A   440 0001:00000B7D   443 0001:00000BA1
+   444 0001:00000BAE   445 0001:00000BB1   446 0001:00000BBE   448 0001:00000BC6
+   452 0001:00000BF7   453 0001:00000C00   455 0001:00000C07   457 0001:00000C1A
+   460 0001:00000C21   461 0001:00000C25   464 0001:00000C30   465 0001:00000C33
+   469 0001:00000C3C   471 0001:00000C41   469 0001:00000C46   471 0001:00000C47
+   469 0001:00000C4D   470 0001:00000C4E   475 0001:00000C55   478 0001:00000C62
+   490 0001:00000C73   491 0001:00000C7C   492 0001:00000C85   495 0001:00000CA5
+   500 0001:00000CA7   484 0001:00000CAA   503 0001:00000CB1   508 0001:00000CB7
+   509 0001:00000CC3   510 0001:00000CCA   512 0001:00000CD1   513 0001:00000CD5
+   512 0001:00000CDC   518 0001:00000CE3   521 0001:00000CE8   522 0001:00000CEB
+   536 0001:00000CF4   537 0001:00000CFB
+
+Line numbers for SysInit(SysInit.pas) segment .text
+
+  1755 0001:00000E14  1757 0001:00000E21
+
+Line numbers for SysInit(SysInit.pas) segment .itext
+
+  1753 0002:00000008  1754 0002:0000000F
+
+Line numbers for Winapi.Windows(Winapi.Windows.pas) segment .text
+
+ 38998 0001:00000E2C 39685 0001:00000E34 42853 0001:00000E3C 42854 0001:00000E42
+ 42855 0001:00000E49 42858 0001:00000E53 42859 0001:00000E5C 42860 0001:00000E65
+ 42862 0001:00000E6E 43120 0001:00000E78 43121 0001:00000E94
+
+Line numbers for Winapi.Windows(Winapi.Windows.pas) segment .itext
+
+ 43116 0002:00000018 43117 0002:00000021 43118 0002:00000026 43119 0002:0000002D
+
+Line numbers for Winapi.PsAPI(Winapi.PsAPI.pas) segment .text
+
+   457 0001:00000E98   459 0001:00000EA9   460 0001:00000EB4   463 0001:00000EBB
+
+Line numbers for Winapi.PsAPI(Winapi.PsAPI.pas) segment .itext
+
+   454 0002:00000030   456 0002:00000037
+
+Line numbers for Winapi.Messages(Winapi.Messages.pas) segment .text
+
+  2232 0001:00000000
+
+Line numbers for Winapi.ActiveX(Winapi.ActiveX.pas) segment .text
+
+  7820 0001:00000000
+
+Line numbers for Winapi.Qos(Winapi.Qos.pas) segment .text
+
+   294 0001:00000000
+
+Line numbers for Winapi.Winsock2(Winapi.Winsock2.pas) segment .text
+
+  3425 0001:00000000
+
+Line numbers for Winapi.IpExport(Winapi.IpExport.pas) segment .text
+
+   446 0001:00000000
+
+Line numbers for Winapi.ShellAPI(Winapi.ShellAPI.pas) segment .text
+
+  1920 0001:00000000
+
+Line numbers for Winapi.CommCtrl(Winapi.CommCtrl.pas) segment .text
+
+ 13262 0001:00000000
+
+Line numbers for Winapi.RegStr(Winapi.RegStr.pas) segment .text
+
+  1878 0001:00000000
+
+Line numbers for Winapi.WinInet(Winapi.WinInet.pas) segment .text
+
+  3466 0001:00000000
+
+Line numbers for Winapi.UrlMon(Winapi.UrlMon.pas) segment .text
+
+  2192 0001:00000000
+
+Line numbers for Winapi.ObjectArray(Winapi.ObjectArray.pas) segment .text
+
+    62 0001:00000000
+
+Line numbers for Winapi.StructuredQueryCondition(Winapi.StructuredQueryCondition.pas) segment .text
+
+   137 0001:00000000
+
+Line numbers for Winapi.PropSys(Winapi.Propsys.pas) segment .text
+
+  1229 0001:00000000
+
+Line numbers for Winapi.ShlObj(Winapi.ShlObj.pas) segment .text
+
+ 14866 0001:00000000
+
+Line numbers for uspQuery(uspQuery.pas) segment .text
+
+    91 0001:0000252C    92 0001:00002547    93 0001:00002554    94 0001:00002576
+    97 0001:00002598    98 0001:000025B4    99 0001:000025C2   100 0001:000025E5
+   103 0001:00002608   104 0001:00002611   105 0001:00002622   108 0001:0000262C
+   109 0001:00002635   110 0001:00002646   113 0001:00002650   114 0001:00002659
+   115 0001:0000266A   118 0001:00002674   119 0001:00002680   120 0001:00002696
+   123 0001:0000269C   124 0001:000026A8   125 0001:000026BE   128 0001:000026C4
+   129 0001:000026D0   130 0001:000026E6   137 0001:000026EC   138 0001:0000270A
+   139 0001:00002727   140 0001:00002762   138 0001:00002794   141 0001:00002799
+   144 0001:000027D4   145 0001:000027EC   146 0001:000027FE   147 0001:00002810
+   148 0001:00002822   149 0001:00002834   150 0001:0000283B   153 0001:0000285C
+   154 0001:0000286D   155 0001:00002878   156 0001:00002883   157 0001:0000288E
+   158 0001:00002899   159 0001:000028A7   162 0001:000028BC   163 0001:000028D6
+   164 0001:000028E1   166 0001:000028E9   167 0001:000028F9   168 0001:00002912
+   169 0001:00002922   170 0001:0000293B   171 0001:00002954   174 0001:000029B0
+   175 0001:000029B9   176 0001:000029C2   179 0001:000029CC   180 0001:000029D5
+   181 0001:000029DE   184 0001:000029E8   185 0001:000029F4   186 0001:00002A02
+   189 0001:00002A08   190 0001:00002A11   191 0001:00002A1A   197 0001:00002A24
+   198 0001:00002A50   200 0001:00002A58   201 0001:00002A67   203 0001:00002A77
+   204 0001:00002A8C   205 0001:00002AA8   209 0001:00002B5B   204 0001:00002B5E
+   210 0001:00002B67   211 0001:00002B6F   219 0001:00002BE8   220 0001:00002C14
+   222 0001:00002C1C   223 0001:00002C3A   225 0001:00002C42   226 0001:00002C57
+   228 0001:00002C73   230 0001:00002CA5   231 0001:00002CAB   233 0001:00002CC7
+   234 0001:00002CCD   237 0001:00002D01   238 0001:00002D0F   226 0001:00002D12
+   239 0001:00002D1B   240 0001:00002D23   244 0001:00002DBC   245 0001:00002DE0
+   246 0001:00002DEF   247 0001:00002DF8   248 0001:00002E02   249 0001:00002E18
+   252 0001:00002E40   253 0001:00002E62   255 0001:00002E99   258 0001:00002EF0
+   259 0001:00002EFC   260 0001:00002F05   263 0001:00002F0C   264 0001:00002F18
+   265 0001:00002F21   268 0001:00002F28   269 0001:00002F34   270 0001:00002F3D
+   273 0001:00002F44   274 0001:00002F60   275 0001:00002F6C   276 0001:00002F88
+   277 0001:00002F96   278 0001:00002FAC   281 0001:00003054   282 0001:0000305B
+   283 0001:0000306A   284 0001:00003080   287 0001:000030FC   288 0001:00003103
+   289 0001:0000310B   290 0001:00003113
+
+Line numbers for uspQuery(uspQuery.pas) segment .itext
+
+   292 0002:000001C0
+
+Line numbers for .spComponentes(spComponentes.dpk) segment .text
+
+    41 0001:00003121
+
+Bound resource files
+
+spComponentes.res
+spComponentes.drf
+
+
+Program entry point at 0002:000001C8
