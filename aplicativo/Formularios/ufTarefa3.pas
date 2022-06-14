@@ -5,7 +5,7 @@ interface
 uses
   Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
   Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Data.DB, Vcl.StdCtrls, Vcl.Grids,
-  Vcl.DBGrids, Datasnap.DBClient;
+  Vcl.DBGrids, Datasnap.DBClient, uProjetoServico;
 
 type
   TfTarefa3 = class(TForm)
@@ -23,6 +23,7 @@ type
     procedure Button2Click(Sender: TObject);
   private
     { Private declarations }
+    ProjetoServico: IProjetoServico;
     cdsProjeto: TClientDataSet;
     dsProjeto: TDataSource;
     procedure PrepararEstruturaDeDados;
@@ -35,35 +36,37 @@ var
 
 implementation
 
-uses uspDataSetUtils, uProjetoServico;
+uses uspDataSetUtils;
 
 {$R *.dfm}
 
 procedure TfTarefa3.PrepararEstruturaDeDados;
+var
+  DataSetMock: IProjetoServicoMock;
 begin
-  cdsProjeto := CriarDataSetProjetos(Application);
+  cdsProjeto := ProjetoServico.GetDataSet;
 
   dsProjeto := TDataSource.Create(Self);
   dsProjeto.DataSet := cdsProjeto;
 
   DBGrid1.DataSource := dsProjeto;
 
-  IniciarDadosDeTeste(cdsProjeto, 10, 100.00);
+  DataSetMock := TProjetoServicoMockRandomico.Create(cdsProjeto, 10, 100.00);
+  DataSetMock.IniciarDadosDeTeste;
 end;
 
 procedure TfTarefa3.Button1Click(Sender: TObject);
 begin
-  edtTotal.Text := FormatFloat('#0.00', ObterTotal(cdsProjeto));
+  edtTotal.Text := FormatFloat('#0.00', ProjetoServico.ObterTotal);
 end;
 
 procedure TfTarefa3.Button2Click(Sender: TObject);
 begin
-  edtTotalDivisoes.Text := FormatFloat('#0.00', ObterTotalDivisoes(cdsProjeto));
+  edtTotalDivisoes.Text := FormatFloat('#0.00', ProjetoServico.ObterTotalDivisoes);
 end;
 
 procedure TfTarefa3.FormClose(Sender: TObject; var Action: TCloseAction);
 begin
-  FreeAndNil(cdsProjeto);
   FreeAndNil(dsProjeto);
   Action := caFree;
   fTarefa3 := Nil;
@@ -71,6 +74,7 @@ end;
 
 procedure TfTarefa3.FormCreate(Sender: TObject);
 begin
+  ProjetoServico := TProjetoServico.Create;
   PrepararEstruturaDeDados;
 end;
 

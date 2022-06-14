@@ -73,13 +73,13 @@ type
     property spTabelas: TStringList read GetTabelas write SetTabelas;
   end;
 
-Const
-  SQL_INDENTACAO = #32#32;
-  SQL_QUEBRA_LINHA = sLineBreak;
-  SQL_WHERE  = 'WHERE';
-  SQL_AND    = 'AND';
-  SQL_SELECT = 'SELECT';
-  SQL_FROM   = 'FROM';
+const
+  SqlIndentation = #32#32;
+  SqlBreakLine = sLineBreak;
+  SqlWhere  = 'WHERE';
+  SqlAnd    = 'AND';
+  SqlSelect = 'SELECT';
+  SqlFrom   = 'FROM';
 
 implementation
 
@@ -163,9 +163,9 @@ begin
   FspSQL.Clear;
   VerificaSQL;
 
-  FspSQL.Append(SQL_SELECT);
+  FspSQL.Append(SqlSelect);
   FspSQL.Append(RetornaColunas);
-  FspSQL.Append(SQL_FROM);
+  FspSQL.Append(SqlFrom);
   FspSQL.Append(RetornaTabelas);
   FspSQL.Append(RetornaCondicoes);
 end;
@@ -204,8 +204,8 @@ begin
   for I := 0 to Lista.Count - 1 do
     Result := Result +
               IfThen(I > 0, ', ') +
-              IfThen((I mod FColunasPorLinha = 0) and (I > 0), SQL_QUEBRA_LINHA) +
-              IfThen(I mod FColunasPorLinha = 0, SQL_INDENTACAO) +
+              IfThen((I mod FColunasPorLinha = 0) and (I > 0), SqlBreakLine) +
+              IfThen(I mod FColunasPorLinha = 0, SqlIndentation) +
               StringReplace(Lista[I], sLineBreak, '', [rfReplaceAll]);
   Lista.Free;
 end;
@@ -219,7 +219,7 @@ var
 begin
   Result := '';
 
-  ExisteOperador := ContainsText(FspCondicoes.Text, SQL_WHERE);
+  ExisteOperador := ContainsText(FspCondicoes.Text, SqlWhere);
   AjustaCondicoes;
 
   Lista := RetornaListaDelimitada(FspCondicoes, ',');
@@ -228,11 +228,11 @@ begin
       Condicao := StringReplace(Lista[I], sLineBreak, '', [rfReplaceAll]).Trim;
 
       if I > 0 then
-        Result := Result + SQL_QUEBRA_LINHA + SQL_INDENTACAO;
+        Result := Result + SqlBreakLine + SqlIndentation;
 
       if not ExisteOperador then
         Result := Result +
-                  IfThen(I = 0, SQL_WHERE, SQL_AND) + #32;
+                  IfThen(I = 0, SqlWhere, SqlAnd) + #32;
 
       Result := Result + Condicao;
     end;
@@ -250,7 +250,7 @@ end;
 
 function TspGeradorSQL.RetornaTabelas: String;
 begin
-  Result := SQL_INDENTACAO +
+  Result := SqlIndentation +
             StringReplace(FspTabelas.Text, sLineBreak, '', [rfReplaceAll]);
 end;
 

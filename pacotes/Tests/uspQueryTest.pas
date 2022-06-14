@@ -79,8 +79,8 @@ begin
   GeradorSQL.GeraSQL;
 
   resultadoEsperado := esperado;
-  resultadoEsperado := StringReplace(resultadoEsperado, '[INDENT]', SQL_INDENTACAO, [rfReplaceAll]);
-  resultadoEsperado := StringReplace(resultadoEsperado, '[QUEBRA]', SQL_QUEBRA_LINHA, [rfReplaceAll]);
+  resultadoEsperado := StringReplace(resultadoEsperado, '[INDENT]', SqlIndentation, [rfReplaceAll]);
+  resultadoEsperado := StringReplace(resultadoEsperado, '[QUEBRA]', SqlBreakLine, [rfReplaceAll]);
 
   Assert.AreEqual(resultadoEsperado, GeradorSQL.GetSQL);
 end;

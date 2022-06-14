@@ -16,12 +16,12 @@ type
     FDataSet: TDataSet;
     FDataSetIteration: IspDataSetIteration;
     FCount: Integer;
+    FProjetoServico: IProjetoServico;
+    FDataSetMock: IProjetoServicoMock;
     procedure OnExecuteIteration(DataSet: TDataSet);
   public
     [Setup]
     procedure Setup;
-    [TearDown]
-    procedure TearDown;
     [Test]
     procedure TestExecute;
   end;
@@ -32,15 +32,12 @@ type
     FDataSet: TDataSet;
     FDataSetIteration: IspDataSetIteration;
     FOperation: IspOperation<Currency>;
-
-    procedure AjustarValoresMultiplosDeDez;
+    FProjetoServico: IProjetoServico;
+    FDataSetMock: TProjetoServicoMock;
     procedure ExecuteComException;
   public
     [Setup]
     procedure Setup;
-    [TearDown]
-    procedure TearDown;
-
     [Test]
     procedure TestTspOperacaoSomaCampo;
     [Test]
@@ -53,6 +50,8 @@ type
 
 implementation
 
+{ TspDataSetUtilsTest }
+
 procedure TspDataSetUtilsTest.OnExecuteIteration(DataSet: TDataSet);
 begin
   FCount := DataSet.RecNo;
@@ -60,16 +59,14 @@ end;
 
 procedure TspDataSetUtilsTest.Setup;
 begin
-  FDataSet := CriarDataSetProjetos(nil);
-  IniciarDadosDeTeste(FDataSet, 10, 100);
+  FProjetoServico := TProjetoServico.Create;
+  FDataSet := FProjetoServico.GetDataSet;
+
+  FDataSetMock := TProjetoServicoMockRandomico.Create(FDataSet, 10, 100.00);
+  FDataSetMock.IniciarDadosDeTeste;
 
   FDataSetIteration := TspDataSetIteration.Create(FDataSet);
   FDataSetIteration.OnExecute := OnExecuteIteration;
-end;
-
-procedure TspDataSetUtilsTest.TearDown;
-begin
-  FreeAndNil(FDataSet);
 end;
 
 procedure TspDataSetUtilsTest.TestExecute;
@@ -80,19 +77,6 @@ end;
 
 { TspDataSetOperationFieldTest }
 
-procedure TspDataSetOperationFieldTest.AjustarValoresMultiplosDeDez;
-begin
-  FDataSet.First;
-  while not FDataSet.Eof do
-    begin
-      FDataSet.Edit;
-      FDataSet.FieldByName('Valor').AsCurrency := FDataSet.RecNo * 10;
-      FDataSet.Post;
-      FDataSet.Next;
-    end;
-  FDataSet.First;
-end;
-
 procedure TspDataSetOperationFieldTest.ExecuteComException;
 begin
   FDataSetIteration.Execute;
@@ -100,20 +84,17 @@ end;
 
 procedure TspDataSetOperationFieldTest.Setup;
 begin
-  FDataSet := CriarDataSetProjetos(nil);
-  IniciarDadosDeTeste(FDataSet, 10, 100);
-end;
-
-procedure TspDataSetOperationFieldTest.TearDown;
-begin
-  FreeAndNil(FDataSet);
+  FProjetoServico := TProjetoServico.Create;
+  FDataSet := FProjetoServico.GetDataSet;
 end;
 
 procedure TspDataSetOperationFieldTest.TestTspOperacaoSomaCampo;
 var
   Valor: Currency;
 begin
-  AjustarValoresMultiplosDeDez;
+  FDataSetMock := TProjetoServicoMockMultiploDeNumero.Create(FDataSet, 10, 10);
+  FDataSetMock.IniciarDadosDeTeste;
+
   FOperation := TspOperacaoSomaCampo.Create(FDataSet.FindField('Valor'));
   FDataSetIteration := TspDataSetOperationField<Currency>.Create(FDataSet, FOperation);
   FDataSetIteration.Execute;
@@ -125,7 +106,9 @@ procedure TspDataSetOperationFieldTest.TestTspOperacaoSomaDaDivisaoNumeroAnterio
 var
   Valor: Currency;
 begin
-  AjustarValoresMultiplosDeDez;
+  FDataSetMock := TProjetoServicoMockMultiploDeNumero.Create(FDataSet, 10, 10);
+  FDataSetMock.IniciarDadosDeTeste;
+
   FOperation := TspOperacaoSomaDaDivisaoNumeroAnterior.Create(FDataSet.FindField('Valor'));
   FDataSetIteration := TspDataSetOperationField<Currency>.Create(FDataSet, FOperation);
   FDataSetIteration.Execute;
@@ -135,6 +118,9 @@ end;
 
 procedure TspDataSetOperationFieldTest.TestTspOperacaoSomaDaDivisaoNumeroAnteriorComEDivZero;
 begin
+  FDataSetMock := TProjetoServicoMockMultiploDeNumero.Create(FDataSet, 10, 10);
+  FDataSetMock.IniciarDadosDeTeste;
+
   FDataSet.RecNo := 2;
   FDataSet.Edit;
   FDataSet.FieldByName('Valor').AsCurrency := 0;
@@ -146,6 +132,9 @@ end;
 
 procedure TspDataSetOperationFieldTest.TestTspOperacaoSomaDaDivisaoNumeroAnteriorComInvalidOp;
 begin
+  FDataSetMock := TProjetoServicoMockMultiploDeNumero.Create(FDataSet, 10, 10);
+  FDataSetMock.IniciarDadosDeTeste;
+
   FDataSet.Append;
   FDataSet.Post;
   FDataSet.Append;
